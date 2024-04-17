@@ -1,0 +1,3 @@
+/src/utils/data/*
+!/src/utils/data/test.pdf
+**/__pycache__/
