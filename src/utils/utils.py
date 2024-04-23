@@ -29,13 +29,67 @@ def gen_10_pages(file_path,out_path=None):
         with open(out_path, 'wb') as output_file:
             pdf_writer.write(output_file)
 
-def OCR(file_path):
-    """Use terminal command ` ocrmypdf --force-ocr <input path> <output path>` to generate ocr pdf """
-    if not os.path.isfile(file_path) or not file_path.endswith('.pdf'):
-        raise ValueError('Can only do OCR with pdf')
+def OCR_PDF(file_path:str,remove_mid=False):
+    file_suffix = 'pdf'
     out_path = file_path.replace('.pdf','')+'_ocr.pdf'
     try:
-        subprocess.run(['ocrmypdf', '--force-ocr', file_path, out_path])
+        subprocess.run(['ocrmypdf','-l','eng+chi_sim', '--force-ocr', file_path, out_path])
     except Exception as e:
         print(f"An error occurred during OCR: {e}")
-    return extract_text_from_pdf(out_path)
+    tfile = extract_text_from_pdf(out_path)
+    if remove_mid:
+        os.remove(out_path)
+    return tfile
+
+def OCR_PNG(file_path:str,suffix:str,remove_mid=False):
+    out_path = file_path.replace(suffix,'')+'_ocr'
+    try:
+        subprocess.run(['tesseract', file_path, out_path, '-l','eng+chi_sim'])
+    except Exception as e:
+        print(f"An error occurred during OCR: {e}")
+    out_path+='.txt'
+    tfile = open(out_path).read()
+    if remove_mid:
+        os.remove(out_path)
+    return tfile
+
+def replace_space(s:str):
+    l = [c for c in s]
+    lc = l.copy()
+    import string
+    alls = string.ascii_lowercase+string.ascii_uppercase
+    j = 0
+    for i,c in enumerate(lc):
+        if c==' ' and (i==0 or not lc[i-1] in alls) and (i+1<len(lc) or not lc[i+1] in alls):
+            l = l[:j]+l[j+1:]
+        else:
+            j += 1
+    return ''.join(l)
+
+def raw_OCR(file_path:str,remove_mid=False):
+    """Use terminal command `ocrmypdf --force-ocr <input path> <output path>` to generate ocr pdf; return is a final text"""
+    file_real,file_suffix = os.path.splitext(file_path)[:2]
+    file_name = os.path.basename(file_real)
+    if os.path.isdir(file_path):
+        raise NotImplementedError(f'have not implemented ocr on file type as {file_path}')    
+    elif file_suffix=='.pdf':
+        return OCR_PDF(file_path,remove_mid)
+    elif file_suffix in ['.jpg', '.jpeg', '.png']:
+        return OCR_PNG(file_path,file_suffix,remove_mid)
+    elif file_suffix in ['.py', '.txt', '.cpp', '.tex', '.md', '.java', '.html', '.css','','.sh','.bat']:
+        return open(file_path, 'r').read()
+    else:
+        try:
+            subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
+        except subprocess.CalledProcessError:
+            raise RuntimeError(f'Failure to OCR file {file_path}')        
+        out_path = f'./{file_name}.pdf'
+        txt = OCR_PDF(out_path,remove_mid)
+        if remove_mid:
+            os.remove(out_path)
+        else:
+            subprocess.run(['mv',out_path,file_real + '.pdf'])
+        return txt
+        
+def OCR(file_path:str,remove_mid=False):
+    return replace_space(raw_OCR(file_path,remove_mid))

@@ -1,3 +1,7 @@
 /src/utils/data/*
 !/src/utils/data/test.pdf
+!/src/utils/data/proposal_ppt_04162057.pptx
+!/src/utils/data/lec.docx
+!/src/utils/data/image.png
 **/__pycache__/
+./1.py
