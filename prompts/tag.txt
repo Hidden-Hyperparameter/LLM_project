@@ -1,0 +1,583 @@
+--- Instruction
+Summarize the given context, and give at least 10 English tags in different perspectives and levels that are most related to the context. The tags should at least contain the main topics and keywords of the context, and also the format of the context, e.g., diary, research paper, e.t.c. 
+
+--- Output format
+Comma separated tags. Each tag is one or a few English words. All letters are in lower case.
+
+--- Example 1
+Context
+少数派新加坡 The Eras Tour
+1 天前
+
+一早定下来要在三月到新加坡去看 *The Eras Tour*，所以这趟狮城之旅本来就是必须的。恰逢除夕开始免签，这趟本来还多少有些麻烦的旅行一下子就变得简单了许多。造访之前，我对于这片赤道热土本身并没有太多期待，因此好处就是经历了短暂两天的体验，从没有期待变成了感受到很多意外的惊喜。不是只有鱼尾狮和金沙酒店的新加坡，有很多值得游客们坐下来慢慢体验的风土人情。我很幸运，不仅赶上了一票难求的时代巡演，还从一个短游者的视角，体会了一把赤道地区独有的新浪漫。
+
+## 一开始就是浓浓的精致味
+
+说起来只是偶然，抢到演唱会门票以后趁着还没离谱涨价立刻定了机酒，往返碰巧全部都是新加坡航空，所以从浦东过完安检登机开始，就已经被浓浓的新加坡味儿包围。登机时刻看到穿着标志马来纱笼的空乘人员，就仿佛自己已经来到了东南亚上空。
+
+新加坡航空曾经四次被评为「年度全球最优航空公司」，靠的就是对每一个服务细节的把控。不仅娱乐设施紧跟最新北美颁奖季的电影（芭比海默占领空中），还为了贴合演唱会氛围推出了的 Taylor Swift 歌单，看的出来新加坡航空对于这些服务细节的把控非常精准。餐食本来就是新航的强项，正餐都有一道中式和一道西式可以选择，甚至刀叉都坚持使用消毒不锈钢而不是一次性餐具。如果你和我一样爱喝两口，那也别错过来自新加坡航空的 Singapore Sling，餐后的一只梦龙还会让你一秒光临热带。只是可惜五个小时的航程一直沉迷万物生灵，没有给餐食留下一张回忆。
+
+![](1d3708913eb4e90d5e9e750ab24d3fc3.png)新航的娱乐剧目紧跟当下，最新颁奖季的热门作品全部可以找到
+
+其实，没有最新的电影、精美的餐食餐具对航空公司来并不是什么大事，选择次之一等的服务甚至还能够带来更多的利润，但新加坡人的精致和认真促使他们选择提供给每一个通过航空感受新加坡的乘客一次美好的体验。一趟通往新加坡的路程，最合适的开始方式，应该就是精致的新航。
+
+## 步行路线一：从丹戎巴葛（Tanjong Pagar）到欧南园
+
+![](11bc45b25c4b459a093e0794f496e1c5.png)最值得漫步的丹戎巴葛与欧南园片区
+
+### 随处可以体验的食阁
+
+丹戎巴葛算是新加坡较早的一个华人聚集片区，距离网红的牛车水夜市也很近。作为 20 世纪 60 年代新加坡第一批商业中心再开发计划的受益者，丹戎巴葛地区应该是新加坡最早的 CBD。当时考虑到出行的便利程度，我的酒店选在了丹戎巴葛地铁站的旁边。订酒店之前并没有做什么攻略，也不知道新加坡各种片区的分布和历史，仅仅是考虑到去 National Stadium 的便利性，可没想到入住之后一查路线，却意外发现距离几个我种草的街区近在咫尺。
+
+下午一点下飞机，酒店附近的食阁，就成为了我本次新加坡之旅的第一站。新加坡的食阁可以很「高贵」，也可以很朴实。价格和香港基本持平，一份绝对够量的虾菇炒饭稳稳花掉 48 元。
+
+![](f118990502cbe5e25ff7eceb287f7063.jpeg)来自食阁的第一餐
+
+### 达士岭组屋
+
+按照地图导航（丹戎巴葛地铁站——欧南园地铁站）的方向，走小路，就会很自然的经过一个新加坡的杰作：达士岭组屋。很难令人想像，组屋作为新加坡住房和社会运作的基础，如今也有了更多的创新设计。达士岭组屋从外观到设计，看似都很像是私人住宅区，但实则却是名副其实的公共住宅区。新加坡政府为了让组屋居住者的生活质量得到保障，近些年来改造并新建了很多的「网红组屋」。通过设计、色彩，空间结构的改变等因素，让这个国家大多数的居民都能享有干净稳定的居住环境。居者有其屋的理念，在今天这些所谓网红组屋的建设下，变得更深入也更完善。
+
+![](56567502078fb38079a070e86637b99f.jpeg)网红组屋达士岭
+
+组屋下还有一个宽敞的小广场，已经接近傍晚也有鸡群在这里漫步，完全不打扰周围的居民在这里聊天遛狗。新加坡的很多居民区都有野生鸡群的足迹，在这里看到也完全不足为奇。当然，这个组屋的位置也是四通八达，往不同方向的岔路走，都可能辐射到你在小红书上刷到的各种的网红经典。在这里穿梭，大概会有一种移动迷宫的错觉吧。
+
+![](c7a9c8340c50df16ab1952ed0ba2cc16.png)真的是城市里的公鸡
+
+### Bukit Pasoh Rd & TEO HONG Rd
+
+穿过达士岭组屋，很自然就会走入一条有着南洋风情的小街道：Bukit Pasoh Rd。这个片区的街道都很短，但好在再短都会有路名。这大约也是曾经的华人聚集区，漳州商会、福建会馆等字样都还保留在沿街的建筑上。我漫步的这天正在下雨，得益于骑楼式的建筑风格，不带雨伞也可以轻松在这条街穿行。或许这是一条极小众的巷子，除了本地人几乎看不到任何游客。一路上的店铺几乎都在二楼，更像是很多工作室一样的小公司。
+
+![](92a25e4795d4e181ccbe598ef44fe98e.jpeg)![](16ceb913a97eff0979ab37a2f019e8d7.jpeg)
+
+在 Bukit Pasoh Rd 与 TEO HONG Rd 即将交汇转弯的位置，有一家名叫草根书屋的书店，对于要淘书的人来说一定是一个可以发现惊喜的地方。不大的店面里，英文、繁体和简体中文的书籍一应俱全，甚至还有按照某一类主题摆放的专题书籍，让你从进门开始就感受到一种被华文文化包裹的感觉。店里最多的就是讲述香港、台湾和新加坡历史华人文化的书，在内地难得一见的一些文化书籍，在这里能够轻松找到。很多书籍上都留下了大家翻阅的痕迹，老板却并不在意，甚至只有单本的书老板也直接拆封摆在货架上供翻阅，当然美中不足的就是当我正好想买的是这个单本的时候，就只能被迫接受这诸多的手指痕迹了。
+
+![](2d14065f7f2a30baee11153f7b32f0e4.jpeg)![](7829d412489626e69ae7be60781c4e01.jpeg)
+
+进入 TEO HONG Rd，就是游客们最常来的地方了。一来是因为这里靠近欧南园地铁站，到访这个片区的游客大部分都会从这里下车，二来是因为街道尽头靠近地铁站的地方，就有游客们最常打卡的—— 99 老树榴莲。店里很容易爆满，但游客们也毫不介意拼桌。专门来打卡榴莲冰的话，也推荐你试一试榴莲泡芙，甚至对于一些榴莲无感用户来说，这家的榴莲泡芙是个很好的尝试入口，几乎没有甜腻感，不会让你失望。
+
+![](80a5505ff9822b94934429677986f531.jpeg)一碗榴莲两个泡芙，一顿新式下午茶齐活儿
+
+## 旧机场老巴刹夜市
+
+一通步行之后，需要找个地方填饱肚子了。从欧南园开始地铁出行，经过两次换乘可以到达蒙巴登，出来以后就可以慢慢悠悠的走向旧机场老巴刹夜市了。出来蒙巴登地铁站，大约还需要走个十分钟左右，不过请相信我，这十分钟绝不会无聊：傍晚的蓝天、棕榈树、组屋都可能成为镜头里独特的风景。
+
+![](f4b0eefdf6560c12e67748b127a8974e.jpeg)水洗蓝下的热带绿![](d7c4c9feb487079235597c63272b199d.jpeg)自己的窗景是给别人看的
+
+虽然旧机场夜市熙熙攘攘，但我到访的这天游客并不算多。这里最有名的，就是米其林认证的老夫子炒粿条。不仅仅是游客，甚至夜市里其他的店主也会来这里点上一盘。一份带着浓浓沙茶酱味的热气腾腾的炒粿条，只要一口下去就能让你梦回福建和广东饮食的味道。平日在城市里的餐饮几乎都逃脱不了预制菜的命运，偶尔来一份锅气十足的炒粿条，也能勉强算的上是清理肠胃了。
+
+![](395ba258b6e8bda0be5e05ce7a78c28a.jpeg)排队半小时，干饭五分钟
+
+新加坡的夜市文化，和台湾并不相同。这里大部分店铺在八九点就打烊收工了，而且整个夜市几乎都在棚户之下，少了一些露天的「人气」。室内夜市在夏天不免让人觉得有些燥热，走出来的一瞬间就能感觉到神清气爽。国内自疫情以来也开始恢复夜市经济，却已经很少能够看到那些在我们年少时期推车出来摆摊的爷爷奶奶们再次回归夜市的身影。新加坡在很多方面是抛弃了普罗大众的，但在夜市里，无论你是西装革履的金融人，还是穿着拖鞋的街坊四邻，再或者是我这种慕名而来的游客，都轻松融入了这个夜市的烟火气。生活，本应如此。
+
+## 步行路线二：市政府片区、鱼尾狮公园、克拉码头
+
+### 战争纪念碑
+
+如果你想要躲开白天巨大的人流，那考虑晚上来到滨海湾片区附近也很不错。我从旧机场夜市出来，直接地铁回城，在滨海广场下车，准备开始一段夜间散步之旅。下车以后，我意外的发现这条城市中的主干道竟然异常的静谧。除了车流不可避免的偶尔带来声音外，无论是行人还是店铺，声音辐射范围都很小，难以置信这居然是一条城市中的主干道。
+
+滨海广场下车走不久，就会遇到这里的一座战争纪念碑，是为了纪念在一站当中阵亡的 124 位出生（或居住）在新加坡的士兵。晚上这里并没有聚集很多人，周围的绿地也只有少量的行人穿过，显得这座纪念碑在绿地其中非常显眼且肃穆。
+
+![](1a4a09c086ca7b49dff0d22a68431833.jpeg)深蓝的天空下坐落着一座庄严的纪念碑
+
+### 大教堂与国家美术馆
+
+向斜对面望去，圣安德鲁斯教堂在夜幕的映衬下，白色的建筑体闪闪发光。再把视线移向左侧，新加坡国家美术馆就会吸引你的眼球。白天这里可能感觉的是庄严与严肃，夜晚体会到的则是静谧与光泽。晚间走这条路线，没有烈日，没有人群，基本可以一个人独享整个安静的步道，目光随着自己的步伐去观察两侧这些新加坡市政府片区重要的文化建筑，应该说是一件绝美之事。
+
+![](774cafe25c9bbf9af74c75bb01311735.jpeg)美术馆的穹顶![](8181b148a3cd508c518e691be7ac17e0.jpeg)圣安德鲁斯大教堂
+
+### 鱼尾狮和金沙酒店
+
+穿过一些不知名的小路段，就会遇见这座城市的标志：鱼尾狮了。也许是 Taylor Swift 的魔力太大，鱼尾狮附近的竟然没有人头攒动，轻轻松松就能够找到不错的位置与鱼尾狮进行合影。而鱼尾狮的对面，金沙酒店也就跟我从视觉上咫尺相隔了。我在后来的白天也随着同行的人再次来到这里，但全无晚上的意境。夜晚交错的灯光，真正把鱼尾狮、金沙酒店和背后的金融区完全融入在城市的现代感与迷离感之中，白天看过去则多少少了一些霓虹带来的繁华都市感。
+
+![](0a3dc0dd1fc115a8484fc8eb65f6a90f.jpeg)![](7de420e641efa20ef79179002148a279.jpeg)![](62294a4a9593c4c1cc0b8c2683c95ca8.jpeg)住不住的起，都得拍一张
+
+### 克拉码头片区
+
+离开鱼尾狮公园，在走向克拉码头的路上，我顺路探访了一下安德森桥。除了大小，无论从哪个角度来说，都几乎可以算是上海外白渡桥的缩小版。桥面禁止通车，对需要拍照的游客来说十分友善。
+
+穿过安德森桥，就可以顺路去克拉码头看一看了。晚上的克拉码头，最适合在酒馆的露天位点一杯小酒感受来自码头的晚风，而白天的克拉码头，就是美食和美景的根据地。大多数中国游客会选择的珍宝海鲜在码头边上就有一家，甚至小红书推荐你必打卡的肉骨茶、Mr. Coconu 也在克拉码头的片区附近。当然，如果你恰好在旁边的商城里购物， 也可以透过玻璃拍到码头的绿山景观。同时，还有彩色警察局让你确信你真的深处于彩色的东南亚世界。作为经典网红打卡地，克拉码头如今可能无法让你做到眼前一亮，可只要来到这里，彩色世界也一定不会失望。
+
+![](2bd70c60a0f32db2674b3c066073aa00.jpeg)![](35d6161892db7897337891b86d917cb5.png)
+
+## 步行路线三：Telok Ayer Street
+
+结束克拉码头观光，我选择继续随着夏夜傍晚的凉风步行回酒店，没想到却解锁了本次旅行最大的惊喜：Telok Ayer Street。这条道路是从克拉码头走向丹戎巴葛需要经过的最长的一条路，起初从金融区的一段进入时，这条路并没有一起我的注意，总以为就是市中心诸多道路中普通的一条，但走着走着，我开始发现了这条路的妙处。它的开端是鳞次栉比的高楼，越深入就越「矮」，很快，我就发现了熙熙攘攘的人群在临街的店铺中开始人头攒动。这个路的中部位置几乎被小酒馆和餐厅所包围，在周五的晚上，大多数结束了一周工作的年轻人开始和自己的朋友们在这条路上聚集，在觥筹交错中感受着夜晚的魅力。
+
+最让我感到惊讶的，是这么一条用繁华和现代做代名词的路，居然还保留了诸多与传统的碰撞。在路口的一边还是美式街头酒馆，过来十字路口却突然安静下来，看到的是保留完好的老教堂与一座道家庙宇，甚至还有一些香火依然旺盛的家族宗祠。当我站在宗祠门口回头，再看到街的另一头完全现代化的楼宇时，不禁感叹于这座城市的包容。即使在如此寸土寸金狭窄的街道，连车道都只能双向一车，也要保留下来这座城市的文化印记。尊重传统和融入现代在这座城市里从来都不冲突，这样多元与包容的文化也属实令人赞叹。
+
+![](e9c0e11ddcac0a6966a2633a1a438cfc.jpeg)略有些东南亚恐怖片的感觉了
+
+于是，我在第二天一早又回到这条街上吃早餐。周末的白天，这里又变成了骑行爱好者们的聚集地。当然，这里也很适合作为一个感受新加坡物价的试验场。我在这条街上很有名的澳式咖啡馆 Sarnies 点了一杯拿铁和一个烟熏三文鱼贝果，轻轻松松花掉 14 新币（折合人民币约 75 元）。贝果里的三文鱼含量和新鲜程度基本可以用惊艳来形容，而拿铁也真的非常澳式，奶香简直不像是这个热带地区应有的水平。类比北京三环和上海梧桐区，这个物价甚至有一些物超所值。对于日常保持着「中产生活方式」的人，新加坡的物价可能就是基本平移。
+
+![](5bf5d3b926ac596f0034666cbaf65953.jpeg)白天的老教堂![](9b091eee81fa16b8220b139afc50831e.jpeg)早餐先生你好
+
+坐在街边露天位吃早饭的间隙，我看到骑行车队从我面前穿过，安静的街道上偶尔有车辆穿行，外国友人们热情的和三五好友相聚咖啡馆共享咖啡，再看看对面写着「中医会馆」大字的老楼和庙宇，没有什么比这个周末的早上让人感觉更美好的事情了。
+
+![](2a3b384dbae694fa4f4a8c4921b2b73e.jpeg)早上九点的街道
+
+## 星加波 Kopi
+
+深度咖啡爱好者的我，自然也少不了要探访一下新加坡的咖啡文化。到来之前，我已经被踩过雷的前人告知过，新加坡的「Kopi」大多使用提神醒脑的罗豆，所以在街边随意买到的基本就会让你的「一口入坟」。因此，在这方面我认真做了一些功课，锁定了两家优胜者：Homeground 以及 Nylon（传说中的亚洲 19 名）。
+
+Homeground 就在 99 老树榴莲的旁边，所以你跟着我的步行路线一就可以轻松找到，而 Nylon 也不会很远，穿过达士岭组屋的另一个方向也可以很快到达。只要你身处丹戎巴葛片区，这两家店都可以轻松品尝。新加坡的咖啡馆并不像国内一样卷天卷地，不仅大多数五点就要关门，而且绝对不会出现各种特调，只有黑咖、白咖和手冲三大类。但这两家店也都足够用心，提供了不同等级和类型的咖啡豆可选，并且还可以根据你的个人偏好为你定制 Special 的喝法。我在两家选择的都是最贵品种豆子的黑咖，口感上也都基本上是最大化体现水果风味的酸度，冰块加持以后可以很清楚的体会到那种泛滥在舌尖上的果酸味。所以，如果你来新加坡找精品咖啡，那你一定不会失望，毕竟这里会帮助你还原豆子最原始的风味，一定能找到最适合的你的一款，但如果你在街边来了一杯通勤咖啡，对不起，请不要像我一样，当着店员的面立刻扔到旁边的垃圾桶中。
+
+![](46548945cd76adb3dcacf0d792960bdf.jpeg)![](48cc935f3a4a29754472995e26710eb4.jpeg)
+
+## National Stadium 的细节与震撼
+
+回到开头第一句，我来新加坡最重要的行程就是参加 Taylor Swift 的演唱会。*The Eras Tour* 从去年火到今年，各种视频刷过无数，但在沉浸的视角也没有办法还原现场带来的震撼。我不会在这里多说演唱会的体感，不过可以相信我，Taylor Swift 一定不会让你失望。
+
+![](6a41486e56b79df6d1eaf8f934736165.jpeg)I'm Taylor
+
+然而，国家体育场的震撼还远不止演唱会本身，与演出相关的所有细节都让我感受到这座城市的精致与热情。距离演出开场前一小时，暖场嘉宾已经开场，超过七成的观众也都已经入场了，我顺路去了卫生间，发现已经涌入大量人群的体育场，洗手间的卫生状况居然还保持的如此之好，没有异味，没有纸屑，甚至没有工作人员在卫生间内随时等待清扫，在国内看过多次演唱会的我简直被这个场景惊掉下巴。一场六万三千人的演出，场馆的工作可以做到如此精细，连卫生间的用户体验也不放过，新加坡人对待细节是有自己的严格与原则的，每一位来到这里的人都能够感受到这里的细致和认真。
+
+![](f032f3528c9804d77d6e92f4d4e5189f.jpeg)虽然但是，我还是要放
+
+下一次震撼，发生在演唱会结束以后。当我们开始陆陆续续走出场馆，时间已经来到了晚上十点半。入场时为我们指引和安检的工作人员，依然面带笑容乐此不疲的对每一批经过的游客讲：have a good night，hope you come to Singapore again。无论你是第一批还是最后一批走出场馆的观众，都能得到这句可爱的祝福。不仅如此，面对地铁限流，场外还会同步播放 Taylor 的歌曲，并且有 DJ 带领正在等待进站的粉丝一起大合唱，不让观众们因为等待限流而感到无聊。这些运营的细节，不做也不会怎样，但是做了，带来的就是深入到每一个环节的舒适的用户体验。我从来没有经历过任何一场演唱会，可以把运营工作从场内到场外都做的如此到位，观众始终是这场演唱会的享受者，所有优化过的细节都在努力向观众证明着这一点。
+
+## 新浪漫，后会有期
+
+出发前除了两家咖啡店，没有做任何攻略的我，在新加坡收获了一次绝佳的旅行体验。新加坡城不大，适合漫步的地方很多，走在任何一个街道都可能找到不一样的惊喜。赤道人民很热情，他们会在地铁上问你头发的颜色为什么这么好看，问你为什么中国人都用大众点评，在意你的旅行体验，也努力让你在短暂的停留中尽可能融入当地的生活。这里还有很多我没有探防到的地方，等待每一位漫步者的光临。
+
+Welcome to Singapore again~
+
+![](fdfcd5173756408a38f4e6762740719a.jpeg)你好，再见
+
+Answer
+The tags are: travel diary, tourism, singapore, the eras tour, taylor swift, national stadium, kopi, telok ayer street, concert, 
+
+--- Example 2
+Context
+DAVID S. DUMMIT 
+RICHARD M. FOOTE
+Dedicated to our families 
+especially 
+Janice, Evan, and Krysta 
+and 
+Zsuzsanna, Peter, Karoline, and Alexandra
+Frequently Used Notation 
+f(A) the inverse image or preimage of A under f 
+a|b a divides b 
+(a, b) the greatest common divisor of a, b 
+also the ideal generated by a, b 
+| Al, |x| the order of the set A, the order of the element x 
+Z, Zt the integers, the positive integers 
+Q, Qt the rational numbers, the positive rational numbers 
+R, Rt the real numbers, the positive real numbers 
+C, C* the complex numbers, the nonzero complex numbers 
+Z[nZ the integers modulo n 
+(Z/nZ)~ the (multiplicative group of) invertible integers modulo n 
+AxB the direct or Cartesian product of A and B 
+H<G His a subgroup of G 
+Zn the cyclic group of order n 
+D2p, the dihedral group of order 2n 
+Sn» 9Q the symmetric group on n letters, and on the set Q 
+An the alternating group on n letters 
+Qs the quaternion group of order 8 
+V4 the Klein 4-group 
+Fn the finite field of N elements 
+GL, (F), GL(V) the general linear groups 
+SL)(F) the special linear group 
+A=B A 1s isomorphic to B 
+CG(A), NG(A) the centralizer, and normalizer in G of A 
+Z(G) the center of the group G 
+Gs the stabilizer in the group G of s 
+(A), (x) the group generated by the set A, and by the element x 
+G=(...|...) generators and relations (a presentation) for G 
+ker y, 1m @ the keel, and the image of the homomorphism ¢ 
+NAG N is anormal subgroup of G 
+gH, He the left coset, and right coset of H with coset representative g 
+IG: A the index of the subgroup H in the group G 
+Aut(G) the automorphism group of the group G 
+Syl,(G) the set of Sylow p-subgroups of G 
+Np the number of Sylow p-subgroups of G 
+[x, y] the commutator of x, y 
+HxK the semidirect product of H and K 
+H the real Hamilton Quatermions 
+R* the multiplicative group of units of the ring R 
+R[x], Rlx1,.-., Xn] polynomials in x, and in x], ..., Xx, with coefficients in R 
+RG, FG the group ring of the group G over the ring R, and over the field F 
+Ox the ring of integers in the number field K 
+lim Aj, ym A; the direct, and the inverse limit of the family of groups A; 
+Zp, Qp the p-adic integers, and the p-adic rationals 
+A@B the direct sum of A and B
+LT(f), LT 
+M,,(R), Mnxm(R) 
+ME(¢) 
+tr (A) 
+Hom r(A, B) 
+End(™) 
+Tor(M) 
+Ann(™M) 
+MORN 
+T*(M), T(M) 
+S*(M), S(M) 
+/A*(M), \(M) 
+my (x), cr (x) 
+ch(F) 
+K/F 
+[K : F] 
+F(a), F(a, B), etc. 
+Mo, F(X) 
+Aut(K) 
+Aut(K/F) 
+Gal(K /F) 
+A” 
+k[A"], k[V] 
+Z(1), Z(f) 
+T(A) 
+rad 
+Assp(M) 
+Supp(M/) 
+D-'R 
+Rp, Ry 
+Ovv; Ty,v 
+My,V 
+Spec R, mSpec R 
+Jac R 
+Ext,(A, B) 
+Tor* (A, B) 
+AG 
+H"(G, A) 
+Res , Cor 
+Stab(] J A dG) 
+14] 
+Ind? () the leading term of the polynomial f, the ideal of leading terms 
+the n x n, and the n x m matrices over R 
+the matnx of the linear transformation ¢ 
+with respect to bases 6 (domain) and € (range) 
+the trace of the matrix A 
+the R-module homomorphisms from A to B 
+the endomorphism ring of the module M 
+the torsion submodule of M 
+the annihilator of the module M 
+the tensor product of modules M and N over R 
+the k'" tensor power, and the tensor algebra of M 
+the k"" symmetric power, and the symmetric algebra of M 
+the k"" exterior power, and the exterior algebra of M 
+the minimal, and characteristic polynomial of 7 
+the characteristic of the field F 
+the field K is an extension of the field F 
+the degree of the field extension K /F 
+the field generated over F by @ or a, £, etc. 
+the minimal polynomal of @ over the field F 
+the group of automorphisms of a field K 
+the group of automorphisms of a field K fixing the field F 
+the Galois group of the extension K /F 
+affine n-space 
+the coordinate ring of A”, and of the affine algebraic set V 
+the locus or zero set of J, the locus of an element f 
+the ideal of functions that vanish on A 
+the radical of the ideal / 
+the associated primes for the module M 
+the support of the module M 
+the ring of fractions (localization) of R with respect to D 
+the localization of R at the prime ideal P, and at the element f 
+the local ring, and the tangent space of the variety V at the point v 
+the unique maximal ideal of O,, y 
+the prime spectrum, and the maximal spectrum of R 
+the structure sheaf of X = Spec R 
+the ring of sections on an open set U in Spec R 
+the stalk of the structure sheaf at P 
+the Jacobson radical of the ring R 
+the n'" cohomology group derived from Homr 
+the n'" cohomology group derived from the tensor product over R 
+the fixed points of G acting on the G-module A 
+the n'" cohomology group of G with coefficients in A 
+the restriction, and corestriction maps on cohomology 
+the stability group of the series | I AIG 
+the norm of the character 6 
+the character of the representation yy induced from H to G
+ABSTRACT ALGEBRA 
+Third Edition 
+David S. Dummit 
+University of Vermont 
+Richard M. Foote 
+University of Vermont 
+John Wiley & Sons, Inc.
+ASSOCIATE PUBLISHER Laurie Rosatone 
+ASSISTANT EDITOR Jennifer Battista 
+FREELANCE DEVELOPMENTAL EDITOR Anne Scanlan-Rohrer 
+SENIOR MARKETING MANAGER Julie Z. Lindstrom 
+SENIOR PRODUCTION EDITOR Ken Santor 
+COVER DESIGNER Michael Jung 
+This book was typeset using the Y&Y TeX System with DVIWindo. The text was set in Times Roman 
+using MathTime from Y&yY, Inc. Titles were set in OceanSans. This book was printed by Malloy Inc. 
+and the cover was printed by Phoenix Color Corporation. 
+This book is printed on acid-free paper. 
+Copyright © 2004 John Wiley and Sons, Inc. All nghts reserved. 
+No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by 
+any means, electronic, mechanical, photocopying, recording, scanning, or otherwise, except as permitted 
+under Sections 107 or 108 of the 1976 United States Copyright Act, without either the prior written 
+permission of the Publisher, or authorization through payment of the appropriate per-copy fee to the 
+Copyright Clearance Center, Inc., 222 Rosewood Drive, Danvers, MA 01923, (508) 750-8400. fax (508) 750- 
+4470. Requests to the Publisher for permission should be addressed to the Permissions Department, John 
+Wiley & Sons, Inc., 111 River Street, Hoboken, NJ 07030. (201)748-6011, fax (201)748-6008, E-mail: 
+PERMREQ@WILEY.COM. ; 
+To order books or for customer service please call 1-800-CALL WILEY (225-5945). 
+ISBN 0-471-43334-9 
+WIE 0-471-45234-3 
+Printed in the United States of America. 
+1098765432 1
+Preface Contents 
+Preliminaries 1 
+0.1 
+0.2 
+0.3 
+Chapter 1 
+1.1 
+1.2 
+1.3 
+1.4 
+1.5 
+1.6 
+1.7 
+Chapter 2 
+Contents 2.1 
+2.2 
+2.3 
+2.4 
+2.5 Basics 1 
+Properties of the Integers 4 
+Z/nZ: The Integers Modulon 8 
+Part |— GROUP THEORY 13 
+Introduction to Groups 16 
+Basic Axioms and Examples 16 
+Dihedral Groups 23 
+Symmetric Groups 29 
+Matrix Groups 34 
+The Quaternion Group 36 
+Homomorphisms and Isomorphisms 36 
+Group Actions 41 
+Subgroups 46 
+Definition and Examples 46 
+Centralizers and Normalizers, Stabilizers and Kernels 
+49 
+Cyclic Groups and Cyclic Subgroups 54 
+Subgroups Generated by Subsets of aGroup 61 
+The Lattice of Subgroups of aGroup 66
+Chapter 3 Quotient Groups and Homomorphisms 73 
+3.1 Definitions and Examples 73 
+3.2 More on Cosets and Lagrange’s Theorem 89 
+3.3. The lsomorphism Theorems 97 
+3.4 Composition Series and the H6lder Program 101 
+3.5 Transpositions and the Alternating Group 106 
+Chapter 4 Group Actions 112 
+4.1. Group Actions and Permutation Representations 112 
+4.2 Groups Acting on Themselves by Left Multiplication—Cayley’s 
+Theorem 118 
+4.3. Groups Acting on Themselves by Conjugation—The Class 
+Equation 122 
+4.4 Automorphisms 133 
+4.5 The Sylow Theorems 139 
+4.6 The Simplicity of An 149 
+Chapter 5 Direct and Semidirect Products and Abelian Groups 152 
+5.1 Direct Products 152 
+5.2 The Fundamental Theorem of Finitely Generated Abelian 
+Groups 158 
+5.3. Table of Groups of Small Order 167 
+5.4 Recognizing Direct Products 169 
+5.5 Semidirect Products 175 
+Chapter 6 Further Topics in Group Theory 188 
+6.1 p-groups, Nilpotent Groups, and Solvable Groups 188 
+6.2 Applications in Groups of Medium Order 201 
+6.3. A Word on Free Groups 215 
+Part Il— RING THEORY 222 
+Chapter 7 Introduction to Rings 223 
+7.1 Basic Definitions and Examples 223 
+7.2 Examples: Polynomial Rings, Matrix Rings, and Group 
+Rings 233 
+7.3. Ring Homomorphisms an Quotient Rings 239 
+7.4 Properties of Ideals 251 
+7.5 Rings of Fractions 260 
+7.6 The Chinese Remainder Theorem 265 
+vi Contents
+Chapter 8 
+8.1 
+8.2 
+8.3 
+Chapter 9 
+9.1 
+9.2 
+9.3 
+9.4 
+9.5 
+9.6 Euclidean Domains, Principal Ideal Domains and 
+Unique Factorization Domains 270 
+Euclidean Domains 270 
+Principal Ideal Domains (PI.D.s) 279 
+Unique Factorization Domains (U.F.D.s) 283 
+Polynomial Rings 295 
+Definitions and Basic Properties 295 
+Polynomial Rings over Fields | 299 
+Polynomial Rings that are Unique Factorization Domains 
+303 
+Irreducibility Criteria 307 
+Polynomial Rings over Fields Il 313 
+Polynomials in Several Variables over a Field and Grébner 
+Bases 315 
+Part Ill - MODULES AND VECTOR SPACES 336 
+Chapter 10 
+10.1 
+10.2 
+10.3 
+10.4 
+10.5 
+Chapter 11 
+11.1 
+11.2 
+11.3 
+11.4 
+11.5 
+Chapter 12 
+12.1 
+12.2 
+12.3 
+Contents Introduction to Module Theory 337 
+Basic Definitions and Examples 337 
+Quotient Modules and Module Homomorphisms 345 
+Generation of Modules, Direct Sums, and Free Modules 
+351 
+Tensor Products of Modules 359 
+Exact Sequences—Projective, Injective, and Flat Modules 
+378 
+Vector Spaces 408 
+Definitions and Basic Theory 408 
+The Matrix of a Linear Transformation 415 
+Dual Vector Spaces 431 
+Determinants 435 
+Tensor Algebras, Symmetric and Exterior Algebras 441 
+Modules over Principal Ideal Domains 456 
+The Basic Theory 458 
+The Rational Canonical Form 472 
+The Jordan Canonical Form 491
+Part IV — FIELD THEORY AND GALOIS THEORY 509 
+Chapter 13. Field Theory 510 
+4 13.1. Basic Theory of Field Extensions 510 
+13.2 Algebraic Extensions 520 
+13.3 Classical Straightedge and Compass Constructions 531 
+13.4 Splitting Fields and Algebraic Closures 536 
+13.5 Separable and Inseparable Extensions 545 
+13.6 Cyclotomic Polynomials and Extensions 552 
+Chapter 14. Galois Theory 558 
+14.1. Basic Definitions 558 
+14.2 The Fundamental Theorem of Galois Theory 567 
+14.3. Finite Fields 585 
+14.4 Composite Extensions and Simple Extensions 591 
+14.5 Cyclotomic Extensions and Abelian Extensions over Q 
+596 
+14.6 Galois Groups of Polynomials 606 
+14.7 Solvable and Radical Extensions: Insolvability of the Quintic 
+625 
+14.8 Computation of Galois Groups overQ 640 
+14.9 Transcendental Extensions, Inseparable Extensions, Infinite 
+Galois Groups 645 
+Part V — AN INTRODUCTION TO COMMUTATIVE RINGS, 
+ALGEBRAIC GEOMETRY, AND 
+HOMOLOGICAL ALGEBRA 655 
+Chapter 15 Commutative Rings and Algebraic Geometry 656 
+15.1 Noetherian Rings and Affine Algebraic Sets 656 
+15.2 Radicals and Affine Varieties 673 
+15.3. Integral Extensions and Hilbert’s Nullstellensatz 691 
+15.4 Localization 706 
+15.5 The Prime Spectrum of a Ring 731 
+Chapter 16 = Artinian Rings, Discrete Valuation Rings, and 
+Dedekind Domains 750 
+16.1. Artinian Rings 750 
+16.2. Discrete Valuation Rings 755 
+16.3. Dedekind Domains 764 
+viii Contents
+
+Answer
+The tags are: textbook, math, abstract algebra, group theory, ring theory, modules, vector spaces, field theory, galois theory, commutative rings, algebraic geometry, homological algebra
+
+--- Context
+} 
+. 
+y . 
+- ‘ 
+7 
+Why “knowledge database” ? 
+Do you have the experience 
+of: 
+¢ remembering something 
+you must have read it 
+somewhere within 
+several days ... 
+¢ The material is on your 
+computer, but you Just 
+cannot find it? 
+ER ARR BARRA
+CH our Goal 
+¢ Reduce time wasting in searching 
+materials 
+¢ Construct a database for their 
+knowledge 
+¢ Discover new connections 
+between topics 
+What Our Model Can Do 
+ee Oe ° Data Searching 
+Learning & Managing Search for the data and the 
+¢ Learn and understand the location in your computer 
+content within your based on your description. 
+computer. 
+¢ Summarize it. 
+¢ Extract key features to Question Answering 
+assign tags to it. Answer questions 
+¢ Builda “database” with based on the data in the 
+hierarchy. computer. 
+RRA BRR
+Why non-trivial ? 
+RRA BRR Format 
+Difference They are in 
+different formats: 
+videos, books, 
+audios, ... 
+Our Approaches 
+Creating 
+“Tags” 
+Using LLM to interpret and 
+give several tags for each multi-level hierarchy. 
+file. 
+files. 
+Querying With Templates Real-time Summarization 
+Designing prompt templates: 
+° _Search through the documents at first time. 
+database’ to get * Only searching for 
+information relevant details each 
+¢ Summarize (or answer time. 
+4 32, Questions). ¢ Avoid reading all Building a managing hierarchy 
+¢ Manage the files with tag ina 
+¢ Builda “database” ofthe
+Flow Chart: Pre-Processing 
+5 10 —> = 
+Text Files > =| > P ) © 
+ORF Searchable > \ —- 
+Formats 7 a 
+Picture 
+Memory Hierarchy 
+RRA BRR
+Flow Chart: Querying 
+RA BARRY
+Flow Chart: Querying 
+ER ARR BARRA
+Flow Chart: Querying 
+RRA BRR
+Flow Chart: Querying 
+RRA BRR
+Flow Chart: Querying 
+RRA BRR
+“8 Resource 
+Needed 
+¢ Model: Any 
+¢ Amount: 10M 
+¢ 1T storage (for 
+user data files) 
+RRR BRRY
+TSINGHUA 
+UNIVERSITY 
+Ek RA BAR EE
+=: KE 
+SPSS SOT glen ee 
+
+--- Answer
