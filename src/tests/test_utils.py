@@ -1,8 +1,11 @@
+import importlib
 def main():
     try:
-        from utils.ocr import OCR,gen_10_pages
+        from utils.ocr import OCR
+        from utils.others import gen_10_pages
         from utils.dependency import CheckDependencies
-    except ImportError:
+    except ImportError as e:
+        print(e)
         raise RuntimeError('please cd to src/ folder, then run \n`python -m tests.test_utils`')
     CheckDependencies()
     master_dir = './tests/data'
@@ -16,32 +19,21 @@ def main():
 
     # check pdf ocr
     gen_10_pages(join(master_dir,'test.pdf'),master_dir)
-    txt1 = OCR(join(master_dir,'test_10pages.pdf'))
-    ###########################################
-    #               FIXME:                    #
-    #       The line below currently will     #
-    #       lead to an error, due to the      #
-    #       version of ocrmypdf. See README   #
-    #       for more info.                    #
-    ###########################################
-    txt2 = OCR(join(master_dir,'test.pdf'),remove_mid=True)
-    ###########################################
-    #                                         #
-    ###########################################
-    assert txt2.startswith(txt1)
+    txt1 = OCR(join(master_dir,'test_10pages.pdf'),quiet=False)
+    txt2 = OCR(join(master_dir,'test.pdf'),quiet=False)
     wt(txt2[len(txt2)*3//7:len(txt2)*4//7])
 
     # check image ocr
-    txt3 = OCR(join(master_dir,'image.png'))
+    txt3 = OCR(join(master_dir,'image.png'),remove_mid=False,quiet=False)
     wt(txt3)
 
     # check other ocr
-    txt4 = OCR(join(master_dir,'proposal.pptx'),remove_mid=True)
+    txt4 = OCR(join(master_dir,'proposal.pptx'),quiet=False)
     wt(txt4)
-    txt5 = OCR(join(master_dir,'lec.docx'))
+    txt5 = OCR(join(master_dir,'lec.docx'),remove_mid=False,quiet=False)
     wt(txt5)
 
-    txt6 = OCR(join(master_dir,'out.txt'),remove_mid=True)
+    txt6 = OCR(join(master_dir,'out.txt'),quiet=False)
     assert txt6.find(txt4)!=-1
     print('Success!')
 

@@ -1,0 +1,71 @@
+### Instruction
+You are a strong formater. You should format any input format in the required format.
+Here are some examples.
+
+### Example 1
+--- Input:
+
+The context appears to be a proposal or outline for a knowledge database system that aims to reduce time wasting in 
+searching for materials, construct a database for knowledge, and discover new connections between topics. The system uses 
+large language models (LLMs) to interpret and assign tags to files in different formats, creates a multi-level hierarchy, 
+and allows for querying and summarization of the data.
+
+The tags are:
+* knowledge database
+* information management
+* artificial intelligence
+* natural language processing
+* data searching
+* question answering
+* summarization
+* tagging system
+* hierarchical database
+* knowledge management
+
+--- Output:
+* knowledge database
+* information management
+* artificial intelligence
+* natural language processing
+* data searching
+* question answering
+* summarization
+* tagging system
+* hierarchical database
+* knowledge management
+
+### Example 2
+--- Input:
+
+Here is a summary of the context and 10 English tags in different Universal Functional Domains (UFDs):
+
+**Summary:** The text describes a knowledge database system that aims to reduce time wasting in searching for materials, 
+construct a database for knowledge, and discover new connections between topics. The system uses Large Language Models 
+(LLMs) to interpret and assign multiple tags to each file, creating a multi-level hierarchy. It can search through 
+documents, summarize information, answer questions, and manage files with tags.
+
+**Tags:**
+
+1. **Artificial Intelligence** (UFD: Computer Science)
+2. **Natural Language Processing** (UFD: Linguistics)
+3. **Information Retrieval** (UFD: Library Science)
+4. **Knowledge Management** (UFD: Business Administration)
+5. **Database Systems** (UFD: Computer Science)
+6. **Large Language Models** (UFD: Artificial Intelligence)
+7. **Multi-Level Hierarchy** (UFD: Mathematics)
+8. **Querying Templates** (UFD: Computer Science)
+9. **Real-time Summarization** (UFD: Journalism)
+10. ** Hierarchical Database** (UFD: Computer Science)
+
+--- Output:
+
+* Artificial Intelligence
+* Natural Language Processing
+* Information Retrieval
+* Knowledge Management ministration
+* Database Systems
+* Large Language Models Intelligence
+* Multi-Level Hierarchy
+* Querying Templates
+* Real-time Summarization
+* Hierarchical Database

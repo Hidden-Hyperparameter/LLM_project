@@ -1,0 +1,100 @@
+TSINGHUA 
+UNIVERSITY 
+Files to Knowledge Database 
+TSINGHUA UNIVERSITY 
+Jiang Zhicheng Wang Zehua Zhao Hanhong
+Why “knowledge 
+database”?
+
+史i 
+@Do you have the 
+experience of :
+¢remembering 
+something you must 
+have read it 
+somewhere within 
+several days ...
+¢The material is on your 
+computer,but you just 
+cannot find it?
+(our Goal 
+¢Reduce time wasting in 
+searching materials 
+¢Construct a database for their 
+knowledge 
+¢Discover new connections 
+between topics 
+Learning &Managing 
+What Our Model Can 
+Do ...
+Data Searching 
+Search for the data and 
+Learn and understand the the location in your 
+content within your computer based on your 
+computer.description.
+Summarize it.
+Extract key features to Question Answering 
+assign tags to it.Answer questions 
+Build a “database”with based on the data in 
+hierarchy.the computer.
+0why non-trivial ?
+Large 
+TAmoun be of 
+contents Ina 
+computer:up to 
+several GBs!
+自强不息厚德载物Difference They are In 
+different formats:
+videos,books,
+audios,...Trade-off 
+We need a model 
+that have both 
+high speed and 
+accuracy!
+oO Our Approaches 
+Creating 
+“Tags”
+Using LLM to interpret 
+and give several tags for 
+each file.Building a managing 
+hierarchy 
+¢Manage the files with tag in 
+a multi-level hierarchy.
+¢Build a “database”of the 
+files.
+Querying With Real-time 
+Templates Summarization 
+Designing prompt ¢Avoid reading all 
+templates:documents at first 
+¢Search through the time.
+“database”to get ¢Only searching for 
+information relevant details each 
+4,*Summarize (or answer time.
+RViractinnc\
+Flow Chart:Pre-
+Processing 
+=)—)10Pages 
+Text Files =)>J 
+LLM 
+ts 
+@
+oO Flow Chart:Querying 
+
+自强不息厚德载物
+oO Flow Chart:Querying 
+
+oO Flow Chart:Querying 
+
+
+oO Flow Chart:Querying 
+
+oO Flow Chart:Querying 
+
+Resource 
+Needed 
+¢Model:Any 
+¢Amount:LOM 
+¢1T storage (for 
+user data files)
+TSINGHUA 
+UNIVERSITY 

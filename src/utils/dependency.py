@@ -5,7 +5,7 @@ def _check_package(package:str,url:str,additional:str=''):
         subprocess.check_output([package,'--help'])
         print(f"Check dependencies: {package} installed")
     except:
-        raise RuntimeError(f'You have not installed the {package} package yet, use apt(or pip) to install {package}, download from {url}, or check our `README.md`. {additional}')
+        raise RuntimeError(f'You have not installed the {package} package yet. We suggest you to use our `install.sh`. However, if you want to download packages independently, you can use apt(or pip) to install {package}, download from {url}.. {additional}')
 def CheckDependencies():
     """ Make sure that the user has installed the `ocrmypdf` software packages using apt"""
     _check_package('tesseract','https://github.com/tesseract-ocr/tesseract','Notice: use apt install tesseract-ocr, instead of tesseract')
