@@ -1,0 +1,1 @@
+how to check if a pod is running

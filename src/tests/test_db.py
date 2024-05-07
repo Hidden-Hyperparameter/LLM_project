@@ -21,7 +21,7 @@ def main():
     print('\n'*20)
     print('[INFO-Test-db] Loading file 1 again, the program should not run OCR again!')
     ans1 = query_db_from_file('./tests/data/test.pdf','what is the definition of quotient group',quiet=False)
-    txt = open('/scratch2/.chroma_data').read()
+    txt = open('/ssdshare/.it/chroma/.chroma_data').read()
     import os
     with open(os.path.join(master_dir,'out.txt'),'w') as f:
         f.write('\n====\n'.join(ans1)+'\n-------------------------\n'+'\n====\n'.join(ans2)+'\n-------log-----------\n'+txt)

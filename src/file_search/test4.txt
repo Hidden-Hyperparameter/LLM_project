@@ -1,0 +1,50 @@
+File:yv6_8dl3ph2m5bs.pdf,	tags: time series analysis; optimal_control; integral_transforms; control theory; algorithms; geometry
+File:tt0h9zz.pdf,	tags: mathematical_physics; logic; integer programming; continuous_optimization; operations_research; statistical inference; dynamic_programming
+File:xng1zn4mko9_07.pdf,	tags: modeling; computation; convex_optimization; nonlinear_programming; english; functional analysis; computation; numerical analysis; astronomy
+File:5qbpeqns.pdf,	tags: linear_programming; actuarial science; javascript; robust_control
+File:mgx_cf92ygs7.pdf,	tags: computer science; nonparametric statistics; stochastic processes; voting_theory; science; control_theory; computer_science
+File:c0ir0.pdf,	tags: differential_equations; fuzzy mathematics; quantum computing; econometrics; mechanism_design; graph theory
+File:he0tt2s97vl7c.pdf,	tags: biology; monte carlo methods; regression_analysis; combinatorial_optimization; robust_control
+File:hbbhtbkos.pdf,	tags: data science; statistical learning; cryptography; stochastic processes; game_theory
+File:nnxjjo.pdf,	tags: artificial intelligence; combinatorial optimization; nonparametric_statistics; geography; graph_theory; partial differential equations
+File:ho0do.pdf,	tags: history; voting theory; mechanism design; probability theory; approximation algorithms; calculus; math; queueing_theory; monte_carlo_methods; probability
+File:w1dsc.pdf,	tags: physics; control theory; continuous_optimization; programming; optimization_algorithms
+File:d7_itselxukl8.pdf,	tags: css; heuristics; continuous_optimization; celestial_mechanics; integer_programming; fuzzy_mathematics; c++; multivariate analysis
+File:rd7scoten1jw3.pdf,	tags: number theory; nonlinear programming; complex_analysis; java; fuzzy_mathematics; mechanism_design
+File:yyx85u_hihtrwb.pdf,	tags: integral transforms; stochastic_programming; global_optimization; statistical_learning
+File:8rk_wyt7deytx.pdf,	tags: functional_analysis; harmonic analysis; algebra; fourier_analysis; stochastic processes; physics; css; decision analysis; statistical_inference; python
+File:0sj2e6xz4x48g5s.pdf,	tags: optimization_algorithms; network_optimization; english; mechanism_design; theoretical_computer_science; data_analysis; modeling; control_theory
+File:mhcuaidflkz_lhb.pdf,	tags: actuarial_science; integral transforms; network theory; robust control; queueing theory; computation; fractional calculus; statistics
+File:rh17oosjxrasp.pdf,	tags: variational_calculus; wavelets; complex analysis; bayesian statistics; java
+File:ldg_qog008m.pdf,	tags: topology; linear_algebra; randomized algorithms; numerical analysis; financial_mathematics; computer science
+File:way4ij.pdf,	tags: math; stochastic control; c++; theoretical computer science; computation; algorithms; fluid_dynamics; randomized_algorithms; convex optimization; computational_geometry
+File:0x8jrzyv__8i9.pdf,	tags: voting theory; optimal_control; systems_theory
+File:sbj3pm5.pdf,	tags: css; robust control; cryptography
+File:bdql1fy6x.pdf,	tags: set_theory; optimization; topology; algorithms; partial_differential_equations; statistics; fluid_dynamics; network_optimization
+File:2g3haw.pdf,	tags: statistical inference; topology; inventory theory; logic; complex analysis; trigonometry; linear_algebra; heuristics; logic
+File:203ts8rdn.pdf,	tags: wavelets; nonlinear_control; numerical_analysis; regression_analysis; network optimization; time series analysis; computer_science; integer programming
+File:luzkc5_4dicex.pdf,	tags: html; voting theory; biology; computational geometry; celestial mechanics; nonlinear programming; optimization algorithms; combinatorics; cryptanalysis; stochastic_control
+File:oi4urelpst9t.pdf,	tags: simulation; optimization; fractional calculus; queueing_theory
+File:4n7pbpsvlk5.pdf,	tags: history; heuristics; fourier_analysis
+File:cvphqw_gtu.pdf,	tags: dynamical systems; continuous optimization; cryptanalysis; heuristics; queueing_theory; harmonic_analysis
+File:8dy38a5.pdf,	tags: fluid_dynamics; adaptive_control; combinatorics; optimization algorithms
+File:loxe95qgekkb0i.pdf,	tags: real analysis; solid_mechanics; nonparametric statistics; real_analysis; approximation algorithms; robust_control; social_choice_theory; math
+File:kaacx.pdf,	tags: regression_analysis; cryptography; python
+File:gbf747c3eaj.pdf,	tags: complex analysis; h-infinity_control; combinatorics; time series analysis; fuzzy_mathematics; queueing_theory; randomized algorithms; metaheuristics
+File:15p9u6jmnal.pdf,	tags: machine learning; real analysis; optimization
+File:padnv4pvwd4_.pdf,	tags: data_science; css; computer_science; physics; continuous optimization; html; nonparametric_statistics; combinatorial_optimization; nonlinear control; convex optimization
+File:lq_bluvrff.pdf,	tags: functional_analysis; chaos_theory; modeling; voting_theory; optimization algorithms
+File:jg58x61s3gxl4.pdf,	tags: nonparametric statistics; queueing_theory; linear programming; statistical inference; regression analysis; convex_optimization
+File:z6bla6zbqw.pdf,	tags: information theory; heuristics; statistical inference
+File:94nfsu3aja1xw.pdf,	tags: set theory; english; chaos theory; discrete_math; programming; math
+File:28zlt3w19ooem.pdf,	tags: english; coding theory; dynamic programming
+File:yjmmsm4a.pdf,	tags: network theory; computer science; astronomy; cryptography
+File:a3nvpcyh2amof.pdf,	tags: robust control; biology; css; optimal control; econometrics; celestial mechanics
+File:xg3alrjlv.pdf,	tags: h-infinity_control; stochastic processes; game theory
+File:ss2gqyk1.pdf,	tags: computational geometry; computational_geometry; simulation
+File:dj0b69n1puvg.pdf,	tags: quantum_computing; calculus; social_choice_theory; trigonometry; game theory; artificial intelligence; operations_research; combinatorial_optimization
+File:thnw5m3dv.pdf,	tags: geography; linear programming; chaos theory; complex analysis; h-infinity_control; coding theory; information_theory; multivariate_analysis; computational_geometry
+File:w0ifb4onp6.pdf,	tags: inventory_theory; econometrics; fuzzy mathematics; geometry; wavelets; chemistry; simulation
+File:ye1kb.pdf,	tags: fractal geometry; english; chemistry
+File:xubfhaojsfzea.pdf,	tags: chemistry; bayesian_statistics; time_series_analysis; quantum_computing; dynamical_systems; real_analysis; dynamic_programming; data science
+File:0zchipv.pdf,	tags: actuarial_science; cryptography; astronomy; mathematical physics; algorithms; artificial_intelligence; integral_transforms; stochastic control; trigonometry

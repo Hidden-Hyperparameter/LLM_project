@@ -1,0 +1,3 @@
+File:./tests/data/test.pdf,   tags: math, abstract algebra, group theory, ring theory, galois theory
+File:./tests/data/lec.pdf,   tags: quantum physics, zeeman effect, fine structure
+File:./tests/data/ailab_rdm.md,   tags: VS Code, Kubernetes, Remote Debugging, Docker, Private Container Registry, Harbor, Custom Image, Ubuntu-TensorFlow, PyTorch, Orion Client, Dockerfile, Docker Commit, Python Package, Navdeep-G/Samplemod, Jupyter Notebook, Matplotlib, Pandas, Git Clone, Workspace Directory, Kubernetes Pod

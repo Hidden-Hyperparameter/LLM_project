@@ -3,7 +3,7 @@ import subprocess
 import os
 import fitz
 from .others import encode
-TMP_DIR = '/tmp/ocr/'
+TMP_DIR = '/ssdshare/.it/ocr'
 
 
 def extract_text_from_pdf(file_path):

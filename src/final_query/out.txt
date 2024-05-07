@@ -1,0 +1,110 @@
+问题1:what is the definition of quotient group
+
+group G by combining this information and we shall indicate how some classification 
+theorems arise 1n this way.
+The study of the quotient groups of G is essentially equivalent to the study of the 
+homomorphisms of G,1.e.,the maps of the group G to another group which respect 
+the group structures.If g 1s a homomorphism from G to a group H recall that the 
+fibers of gy are the sets of elements of G projecting to single elements of H,which we
+====
+of G/K as being obtained by collapsing or “dividing out”by K (or more precisely,by 
+equivalence modulo K).This explains why G/K is referred to as a “quotient”group.
+The definition of the quotient group G/K above requires the map ¢explicitly,
+since the multiplication of the fibers is performed by first projecting the fibers to H 
+via yg,multiplying in H and then determining the fiber over this product.Just as for
+====
+group,called a quotient group of G (a formal definition follows the example below).
+Since the multiplication of fibers is defined from the multiplication in H,by con-
+struction the quotient group with this multiplication is naturally isomorphic to the image 
+of G under the homomorphism ¢(fiber X,is identified with its image a in #2).
+Example 
+Let G =Z,let H =Z,,=(x)be the cyclic group of order n and define g :Z >Z,,by 
+g(a)=x?.Since 
+g(a +b)=x°t?=x%x?=o(a)g(b)
+====
+versa.
+We developed the theory of quotient groups by way of homomorphisms rather than 
+simply defining the notion of a normal subgroup and its associated quotient group to 
+emphasize the fact that the elements of the quotient are subsets (the fibers or cosets of the 
+kernel NV)of the original group G.The visualization in Figure 1also emphasizes that N 
+(and its cosets)are projected (or collapsed)onto single elements in the quotient G/N.
+
+
+
+问题2:how to check if a pod is running
+
+之后，可以通过运行
+```bash
+kubectl get pods
+```
+来观察启动的pod是否已经启动了。启动之后可以通过
+
+```bash
+kubectl exec -i name_of_the_pod --bash
+```
+来连接这个pod，并且启动bash。建议大家使用后边描述的使用VSCode连接K8S使用，要方便很多。
+
+###默认挂载的存储描述
+
+在默认的模板中，自动为每个pod默认挂载了三个存储卷。这些存储卷是管理员为用户创建好了用于长期保存数据的[持久卷申领（PersistentVolumeClaim，PVC）](https://kubernetes.io/zh-cn/docs/concepts/storage/persistent-volumes/)。
+
+-挂载于容器内`/root`路径的NFS服务的PVC，用于存储文档及代码等小文件；
+-挂载于容器内`/gfshome`路径GFS的个人存储空间PVC，用于存储模型文件、数据集等大文件；
+-挂载于容器内`/share`路径GFS的共享空间PVC，用于存放和共享开源大模型、开源数据集等公共数据；
+====
+之后利用`docker`按照Dockerfile 制作镜像，并标记为`sample:v0`：
+
+```bash
+docker build .-t sample:v0
+```
+
+最后确认镜像已经成功创建：
+
+```
+$docker images |grep sample
+sample v0707ab1c8814630seconds ago 11.3GB
+```
+
+#####从自定义镜像创建Pod
+
+从刚才我们制作的镜像创建Pod 分为两步，首先需要将镜像推送到集群镜像仓库Harbor，再从Harbor 对应的镜像拉起Pod。
+
+访问[https://harbor.ai.iiis.co:9443](https://harbor.ai.iiis.co:9443)，注意这里必须是https，用户名及密码等同用户访问k8s集群的用户名及密码。
+
+>**_NOTE:_**注意这里的用户名格式为“用户名@iiis.co”。
+
+连接到Harbor 后新建项目：
+
+![](assets/harbor/harbor_dashboard.jpg)
+====
+##集群概况
+
+本集群计算环境基于K8S 搭建而成，硬件包括3台独立的master 节点、28台worker 节点和一台提供NFS 服务的NAS（网络存储服务器）。使用Harbor 搭建私有镜像仓库，openLDAP 进行统一身份认证。通过统一的kubeconfig 配置文件分发平台，用户也可以通过[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)以命令行的方式使用K8S集群。
+
+
+|系统|登陆地址|功能|
+|---|---|---|
+|密码管理|https://auth.ai.iiis.co:9443|账号修改密码。|
+|Harbor|https://harbor.ai.iiis.co:9443|私有容器镜像仓库|
+|kubeconfig|https://login.ai.iiis.co:9443|kubeconfig配置文件分发平台|
+
+##获取访问权限
+
+在管理员已经为用户创建好账号的情况下，用户需要确认是否已经满足下列三个条件
+====
+##配置集群访问环境
+
+###安装本地软件
+
+本地电脑至少需要安装以下两个软件。
+
+####Kubectl
+用户可以直接使用[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)管理k8s。
+安装说明在https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+####Helm
+helm 是Kubernetes 的包管理器，helm的安装及使用方法可以参考[官方文档](https://helm.sh/docs/)。比较简单的安装方式（Linux上）是使用这个脚本
+https://helm.sh/docs/intro/install/#from-script
+
+推荐安装以下软件：
+*Docker （如果你需要本地构建镜像）。PC上推荐安装docker desktop，有界面使用更方便。https://www.docker.com/products/docker-desktop/

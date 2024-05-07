@@ -1,0 +1,50 @@
+File:y7fi9r.pdf,	tags: numerical methods; fractal_geometry; voting theory; simulation; robust control; machine_learning; chemistry; continuous optimization
+File:9qy5lll3xuc.pdf,	tags: machine_learning; biology; multivariate analysis; logic; statistical_inference; computation; html; physics; computer_science
+File:ylob8qm8uth9o.pdf,	tags: social choice theory; english; chaos theory; robust control; dynamical systems; fuzzy_mathematics; c++; biostatistics; set_theory; algorithms
+File:36128w3.pdf,	tags: global_optimization; coding_theory; integer_programming; geography
+File:qd3lhkvt98c6.pdf,	tags: combinatorial_optimization; numerical_analysis; h-infinity control; heuristics; combinatorics; network_theory; math
+File:o0tobxyh34au.pdf,	tags: science; functional_analysis; integer programming; fluid_dynamics; real_analysis; dynamical systems; topology
+File:n4idw.pdf,	tags: data_science; fractal geometry; network optimization; control_theory; logic; history; graph theory; computer science; topology; mechanism_design
+File:913srk7dg5e.pdf,	tags: financial mathematics; queueing_theory; nonparametric statistics; monte_carlo_methods; computational geometry; wavelets; dynamic_programming; integral_transforms; probability_theory; theoretical computer science
+File:87jkshh3rm30.pdf,	tags: integral_transforms; english; computational geometry; information_theory; convex optimization; geometry; randomized_algorithms; machine_learning; modeling; optimization algorithms
+File:xcjiwoucc.pdf,	tags: operations_research; metaheuristics; geography; mathematical physics
+File:x0nt7toz45lg.pdf,	tags: h-infinity_control; computation; history; complex analysis; approximation algorithms; theoretical computer science; geometry; calculus
+File:dg578gydkzwsym.pdf,	tags: fourier analysis; fuzzy_mathematics; fuzzy mathematics; monte carlo methods; operations_research; c++; voting_theory; cryptanalysis; complex_analysis
+File:d5t1_sxp6eg0.pdf,	tags: social_choice_theory; machine learning; css; algorithms
+File:6r2bh9r5se.pdf,	tags: complex analysis; physics; fractal_geometry; algorithms; regression analysis; time series analysis; heuristics; network optimization
+File:madgl7_h_r4703.pdf,	tags: probability; solid mechanics; theoretical_computer_science
+File:i_5t9gd0kssejl.pdf,	tags: mechanism design; chaos theory; geometry; algebra; nonparametric statistics
+File:fjbo1kkd91a.pdf,	tags: fourier_analysis; real analysis; mathematical physics; mechanism design; dynamical_systems; logic; adaptive_control; probability; html
+File:mgjd68lvlyh22jb.pdf,	tags: cryptography; biostatistics; fractal geometry
+File:70js_zphnsdm.pdf,	tags: data_science; computer science; randomized_algorithms; functional_analysis; algorithms; bayesian statistics
+File:we7va68.pdf,	tags: robust_control; linear programming; java; h-infinity control
+File:m93vmu.pdf,	tags: fuzzy mathematics; queueing_theory; chemistry; graph_theory; probability theory; coding_theory
+File:yxhbmj_.pdf,	tags: set theory; computational geometry; voting_theory; topology; programming; bayesian_statistics; quantum computing
+File:vfbcgmnlzsjtyxc.pdf,	tags: discrete_math; functional_analysis; english; topology; mechanism_design; metaheuristics; calculus; approximation_algorithms
+File:np_q26p.pdf,	tags: complex analysis; integral transforms; combinatorics; bayesian_statistics; linear_algebra; data science
+File:q44ceh.pdf,	tags: c++; english; actuarial science; c++; java; partial_differential_equations; adaptive control
+File:2_pgcogeevqs.pdf,	tags: stochastic programming; regression analysis; history; chemistry; monte carlo methods; html; h-infinity control
+File:0udsuc.pdf,	tags: partial_differential_equations; css; complex analysis; mathematical_physics; game_theory; solid_mechanics; geography; regression_analysis
+File:eu4q52f8y.pdf,	tags: decision_analysis; discrete_math; regression analysis; stochastic processes; biostatistics; celestial_mechanics; python
+File:ntjx4z9d5a.pdf,	tags: chaos theory; stochastic programming; functional analysis; trigonometry; harmonic_analysis
+File:1ghnaz36wuvb.pdf,	tags: trigonometry; discrete math; biology; stochastic_control; dynamic_programming; randomized algorithms; computation; data_analysis
+File:_5_q5uey79d4i.pdf,	tags: harmonic_analysis; geometry; logic; topology; functional analysis; nonparametric_statistics; quantum computing; regression_analysis; english; integral transforms
+File:eg39p4q2j0c7hn.pdf,	tags: biology; biostatistics; physics; optimization; randomized_algorithms; numerical analysis; html; heuristics
+File:o0zizeexr.pdf,	tags: optimization; science; algorithms; wavelets; inventory_theory; english; set theory; network_theory
+File:ski7iizff0jtsh.pdf,	tags: h-infinity control; english; trigonometry; solid_mechanics; geometry; h-infinity_control; history
+File:je8xvrf.pdf,	tags: statistical_learning; statistics; harmonic_analysis; systems_theory; science; game theory; machine learning; real_analysis; stochastic_control; network_theory
+File:c1g69h956y.pdf,	tags: fluid_dynamics; voting theory; java; quantum_computing; systems theory; combinatorics; metaheuristics
+File:u305kjz6u.pdf,	tags: trigonometry; chemistry; statistics; quantum_computing; simulation; time_series_analysis; history; robust_control; nonlinear programming
+File:zmkr0jpf4kw.pdf,	tags: heuristics; set theory; complex analysis; global_optimization; game theory; modeling; data_analysis; c++; mathematical physics; fractal_geometry
+File:tm66jju1p.pdf,	tags: chemistry; data science; h-infinity control
+File:3p17sgia.pdf,	tags: nonparametric statistics; stochastic_processes; randomized algorithms; financial mathematics; css
+File:yrti4_rjdk8.pdf,	tags: adaptive_control; differential equations; astronomy; fuzzy mathematics
+File:xmpd7jk1pnuc.pdf,	tags: simulation; combinatorics; number theory
+File:oso6odmvwf.pdf,	tags: cryptography; metaheuristics; control theory; nonlinear control; actuarial science
+File:lse9gh4yx4rn8sc.pdf,	tags: fractal_geometry; information theory; discrete_math; fractional calculus; c++
+File:2mu4slh626.pdf,	tags: convex_optimization; stochastic programming; linear_algebra; data science; nonlinear_programming; computation
+File:9lhv0jh82.pdf,	tags: partial differential equations; computer_science; logic; adaptive_control; nonparametric statistics; multivariate_analysis; metaheuristics; fractal_geometry; probability theory; fractional_calculus
+File:1bw6bzuw.pdf,	tags: fractional calculus; statistics; control_theory; statistical learning
+File:cap18jm.pdf,	tags: html; celestial_mechanics; adaptive_control; algorithms; mathematical_physics; fourier analysis
+File:grjy7pun6.pdf,	tags: optimization; numerical analysis; celestial mechanics; data analysis; linear_programming; math; wavelets; simulation; geometry; continuous_optimization
+File:7vzaq1.pdf,	tags: convex_optimization; combinatorial_optimization; artificial_intelligence; wavelets; actuarial science; combinatorics; cryptography; html; complex_analysis
