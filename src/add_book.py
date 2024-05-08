@@ -1,5 +1,8 @@
 from db.db import query_db_from_file
-from db.db import query_files_with_citation
+
+import os
+from os.path import join
+from utils.ocr import OCR
 
 with open('./new_files_path.txt', 'r') as f:
     file_path = f.read()
@@ -18,6 +21,8 @@ txt = OCR(file_path,quiet=False)
 with open(join(out_path, '10pages.txt'), 'w') as f:
     f.write(txt)
 
-query_db_from_file(out_path, '')
+
+os.system(f"sh ../prompts/run.sh {join(out_path), '10pages.txt'}")
+
 query_db_from_file(file_path, '')
 

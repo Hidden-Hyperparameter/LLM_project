@@ -63,9 +63,7 @@ def make_db_from_text(filename:str,texts:str,quiet=True):
 def query_db_from_file(file:str,query:str,quiet=True):
     """query `query` from chroma db, given context `file`
     notice that `file` is a path."""
-    print('before',file)
     file = os.path.abspath(file)
-    print('AFTER',file)
     files = getlogs()
     # load chroma embedding
     minilm_embedding = SentenceTransformerEmbeddings(model_name="/share/embedding/all-MiniLM-L6-v2/")

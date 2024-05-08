@@ -1,0 +1,4 @@
+
+OCR file [./tests/data/hierarchical_data_simple/dd/5Energy20.pdf] finished
+
+OCR file [./tests/data/hierarchical_data_simple/dir/About the Bonus.docx] finished

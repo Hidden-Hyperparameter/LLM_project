@@ -1,1 +1,5 @@
-Give me some(about 20) tags based on the context below, without any other things!
+# Instruction
+Give me some (about 20) tags based on the context below, without any other things!
+
+# Output Format (DO NOT OUTPUT ANYTHING ELSE!)
+tag1, tag2, tag3, ...

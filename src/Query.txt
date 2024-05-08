@@ -1,127 +1,370 @@
-Give me some(about 20) tags based on the context below, without any other things!
-__Reader-Writer Problem__:shared database,many readers +1writer
+Give me some(about 10-20) tags based on the context below, without any other things!
+eee 
+Lecture 5:Energy and Work 
+In this Chapter,we introduce the concept of energy and work and their applications in various 
+physical processes.Energy is one of the most basic concepts in physics and appears in many 
+different forms,such as potential energy and heat.Historically,people do not even know all these 
+forms belong to the same term,energy.Moreover,work plays the role of converting one form of 
+energy to another.In addition,we also show the conservation law of energy,which is one of the 
+most universal laws in nature.
+CONTENTS 
+HD Cloth do “INI 
+11
+11
+11
+16
+16
+I.ENERGY AND WORK 
+In physics,energy is a property of objects which can be transferred to other objects or converted into different forms.
+The ‘ability of a system to perform work’is a common description,but it is difficult to give one single comprehensive 
+definition of energy because of its various forms.For instance,in SI units,energy is measured in joules,and one joule 
+is defined ‘mechanically’,being the energy transferred to an object by the mechanical work of moving it a distance of 
+1meter against a force of 1newton.However,there are many other definitions of energy,depending on the context,
+such as thermal energy,radiant energy,electromagnetic energy,nuclear energy,etc.,where definitions are derived for 
+the sake of convenience.
+A.Work done by constant and non-constant forces 
+The physical concept of work can be mathematically described by the scalar product between the force and the 
+displacement vectors (see Fig.1),
+AW =F.Ar =FAr cos.(1)
+In the limit when Ar’—->0,then the displacement becomes dr and 
+dW =F -dr,(2)
+where dr’has the same direction of v.Note that we use dW instead of dW due to the fact that W is not a state 
+function.Instead,W depends on the path of the movement.
+4
+M 
+Sy O-#=~~========>x 
+FIG.1.Force and displacement are not in the same direction.
+Question 1.Is there any relation between F .dF and Fdr,like Eq.(1)?What about F\d?|?
+For simplicity,we illustrate the work done by a constant /non-constant force in one dimension.Suppose a body moves 
+from an initial point x;to a final point xf so that the displacement of the point the force acts on is Ax =xf —a;>0.
+The work done by a constant force F%=Fey acting on the body is the product of the component of the force 
+F®and the displacement Az,
+W*=FtAg.(3)
+Work is a scalar quantity;it is not a vector quantity.The SI unit for work is [IN +m]=[lkg-m-s7?][1m]=
+[lkg-m?-s~?]=[1J].The SI unit of energy is named for James Prescott Joule.
+The displacement that appears in the above equation is not the displacement of the body but the displacement of 
+the point of application of the force.For point-like objects,the displacement of the point of application of the force 
+is equal to the displacement of the body.However,for an extended body,we need to focus on where the force acts 
+and whether or not that point of application undergoes any displacement in the direction of the force.
+Consider a body moving in the x-direction under the influence of a non-constant force in the x-direction,F =F,(x)t.
+The body moves from an initial position x;to a final position xs.The work done by this non-constant force is 
+given by 
+rf 
+作二/F,,(x)da.(4)
+Generally,the work done by a non-constant force along an arbitrary path is 
+一一W二/Bar.(5)
+Here,we give three examples:Example |is the scenario where the directions of the force and the displacement 
+possess angles,Example 2is about the work done by non-constant force,and Example 3considers the case when a 
+pair of forces are applied on two particles.
+Example 1(Work done by force applied at an angle to the direction of displacement).Suppose we push the cup by 
+a constant force with the magnitude F®and at an angle @upwards with respect to the table,for a distance of Ax.
+Friction should not be ignored.Calculate the work done by the pushing force.Calculate the work done by the kinetic 
+frictional force.
+FIG.2.Force diagram on the object.
+Solution.The force diagram on the cup and coordinate system is shown in Figure 2.
+The x-component of the pushing force is 
+FY =F“cos@.(6)
+Suppose a body moves from an initial point xo to a final point xf so that the displacement of the point the force 
+acts on is positive Ax =xf —x)>0.The work done by a constant force Fo =Py acting on the body is the 
+product of the component of the force Ff and the displacement Az,
+W°=FY Ar =F%cos dAz.(7)
+The kinetic frictional force is 
+FP =—y,Ni =F%.(8)
+In this case,the magnitude of the normal force is not simply the same as the weight of the cup.To find the normal 
+force,we need to find the y-component of the applied force and apply Newtons Second Law in the y-direction,
+FY =F“sin@PN ma (9)
+y 十八一029二0
+Then the work done by the kinetic frictional force is 
+T 二一LxAz(mg 一Fe sin 0)(10)
+口
+Example 2(Work done by the spring force).Fix one end of a spring to a wall and connect the other end of the 
+spring to a body resting on a smooth (frictionless)table,as shown in Figure 3.Stretch the spring and release the 
+spring-body system.How much work does the spring do on the body as a function of the stretched or compressed length 
+of the spring?
+Solution.We first begin by choosing a coordinate system with origin at the position of the body when the spring is 
+at rest in the equilibrium position.We choose the 7unit vector to point in the direction that the body moves when 
+the spring is being stretched and the coordinate x to denote the position of the body with respect to the equilibrium 
+position,as in Fig.3(which indicates that in general the position x will be a function of time).The spring force on 
+the body is given by 
+F*=F%,=—kai (11)
+史一一一L 
+圣\
+a 1|fu 
+m k 1/om !
+i 1|NaN )
+L CC LL L111UML WIT ˇˇ—>个
+FIG.3.Equilibrium position and position at time t.
+als 
 
-目标:reader只读完整的内容
-
-Correctness Constraints:
-–Readers can access database when no writers
-–Writers can access database when no readers or writers
-–Only one thread manipulates state variables at a time
-
-–State variables (Protected by a lock called “lock”):
-»int AR:Number of active readers;initially =0
-»int WR:Number of waiting readers;initially =0
-»int AW:Number of active writers;initially =0
-»int WW:Number of waiting writers;initially =0
-
-»Condition okToRead =NIL
-
-»Condition okToWrite =NIL
-
--2waiting places
-
-```c
-Reader(){
-//First check self into system
-lock.Acquire();
-while ((AW +WW)>0){//Is it safe to read?
-WR++;//No.Writers exist
-okToRead.wait(&lock);//Sleep on cond var
-WR--;//No longer waiting
-}
-AR++;//Now we are active!
-lock.release();
-//Perform actual read-only access
-AccessDatabase(ReadOnly);
-//Now,check out of system
-lock.Acquire();
-AR--;//No longer active
-if (AR ==0&&WW >0)//No other active readers
-okToWrite.signal();//Wake up one writer
-lock.release();
-}
-```
-
-```c
-Writer(){
-//First check self into system
-lock.Acquire();
-while ((AW +AR)>0){//Is it safe to write?
-WW++;//No.Active users exist
-okToWrite.wait(&lock);//Sleep on cond var
-WW--;//No longer waiting
-}
-AW++;//Now we are active!
-lock.release();
-//Perform actual read/write access
-AccessDatabase(ReadWrite);
-//Now,check out of system
-lock.Acquire();
-AW--;//No longer active
-if (WW >0){//Give priority to writers
-okToWrite.signal();//Wake up one writer
-}else if (WR >0){//Otherwise,wake reader
-okToRead.broadcast();//Wake all readers
-}
-lock.release();
-}
-```
-
-writer有优先级，否则writer一直进不去
-
-叫醒一个人的代价:some context switches,不是很多也不是很少
-
-__LANGUAGE SUPPORT FOR SYNCHRONIZATION__
-
-C++的问题：throw exception
-
-需要catch+release lock
-
-C++support:destruct lock时直接release
-
-Java:__Synchronized__->隐藏lock (有关键字的函数就创建锁，out of scope就释放);lock是属于一个class的
-
-
-#New way:communicate by sending messages
-
-instead of sharing memory
-
-In `Go`:using channel (queue)
-
-#Deadlocks
-
-__Preemptive /non-preemptive resources__:preemptable ->can take it away;(CPU)
-
-non ->must leave it with the thread;(lock,printer)
-
-__Starvation &Deadlock__:deadlock必须是cyclic waiting for resources
-
-2resources /2users
-
-__4requirements for deadlock__:
-
--Mutual exclusion
-
--Hold and wait
-
--No preemption
-
--circular wait
-
-To fix deadlock:kill &restart (often database)
-
-OS:ignore
-
-__Prevention__:
-
-1.Infinite resources!
-
--illusion of infinite resources:virtual memory
-
-2.No sharing (不现实)
-
-3.No waiting (traditional phone company)
-
-4.Make all threads request everything at the beginning ->some waste,but correct
-
-5.In particular order so that no circular ->require global order
+FIG.4.The x-component of the spring force as a function of «.
+In Fig.4we show the graph of the z-component of the spring force as a function of x for both positive values of x 
+corresponding to stretching,and negative values of x corresponding to compressing of the spring.Note that xo and 
+xz can be positive,zero,or negative.
+The work done is just the area under the curve for the interval xo to xf,
+x Ff 。x Ff 1
+W=/Fsdz =/(—kax)da =5(x4—x9)(12)
+LO LO 
+When the absolute value of the final distance is less than the absolute value of the initial distance,|x|<|xo|,the 
+work done by the spring force is positive.This means that if the spring is less stretched or compressed in the final 
+state than in the initial state,the work done by the spring force is positive.The spring force does positive work on 
+the body when the spring goes from a state of greater tension to a state of lesser tension.口
+Example 3(Work done by a pair of forces).Consider a pair of forces F,and Fy acting on two particles A,and 
+Ay.Suppose F,+F,=0.Calculate the work caused by F,and Fy,and show that it only depends on the variance of 
+relative distance T19.
+一
+FIG.5.Work done by a pair of force.
+Solution.The work W is 
+W=Wi4+W2=F.-(%-—71)+F-(%—7)
+=—Fo-(7-71)+Fo -(7-7)(13)
+=Fy:((%-7)—(2-74)=Fa (Fe —72),
+from where we can see that W only depends on the change of rj2.口
+B.Power applied by a force 
+Suppose that an applied force F®acts ona body during a time interval At,and the displacement of the point of 
+application of the force is in the x-direction by an amount Az.
+The average power of an applied force is defined to be the rate at which work is done,
+a _AW®ˇF2Az 
+ave"At At 一万`睾乙微鲫U巳$'(14)
+The instantaneous power at time t is defined to be the limit of the average power as the time interval [t,t +At]
+approaches zero,
+Az ,AW?FReAaz 。a _pa 
+ee ato BE aly Ar alo Re Pet 峡
+The average power delivered to the body is equal to the component of the force in the direction of motion times the 
+component of the average velocity of the body.The instantaneous power of a constant applied force is the product 
+of the component of the force in the direction of motion and the instantaneous velocity of the moving object.Power 
+is a scalar quantity and can be positive,zero,or negative depending on the sign of work.The SI units of power are 
+called watts [W]and [1W]=[1/7-s71].
+Generally,the instantaneous power of a non-constant force at time t is 
+P(t)=F(t)-&(t).(16)
+C.Kinetic energy and work-kinetic energy theorem 
+The kinetic energy K of a point particle of mass m moving with speed v is defined to be the non-negative scalar 
+quantity 
+二一二一`叶'1Kk 50245nd 7(17)
+The kinetic energy is proportional to the square of the speed.The SI units for kinetic energy are [kg -m?-s~?].This 
+combination of units is defined to be a joule and is denoted by [J],thus 1J =1kg-m?-s~?.The above definition of 
+kinetic energy does not refer to any direction of motion,just the speed of the body.
+There is a direct connection between the work done on a point particle and the change in kinetic energy the point 
+particle undergoes.If the work done on the particle is non-zero,this implies that an unbalanced force has acted on 
+the particle,and the particle will have undergone acceleration.For a particle undergoing one-dimensional motion,the 
+work done on the particle by the component of the sum of the forces in the direction of displacement is given by 
+“fF 11W=/F,,(a)dx =sy 一svi =Ky —Kj.(18)
+This formula can be easily obtained from the second law of Newton for a point particle in one-dimensional motion.
+In a general case,we consider the change of kinetic energy over a tiny time interval dt.The changing rate of kinetic 
+energy is given by 
+aK 1,a@-a)
+dt ˇ2dt 
+1dv =_m2¢-—
+nn 
+02(19)二亿.厂
+dF =
+dt 
+dw
+Here dW is the work applied to the system over the time interval dt.The second equality can be derived from the 
+Cartesian coordinates 
+d 司d(u2+5+v2du du du di ()二(冗y z)二2〔微$」十0Vy 一七___7丿′Z」〉2亿.(20)
+dt dt dt dt dt dt |
+Integrate Eq.(19)over time,we obtain similar results as the one in Eq.(18).
+When the work done on an object is positive,the object increases its speed,and negative work done on an object 
+causes a decrease in speed.When the work done is zero,the object will maintain a constant speed.In fact,the 
+work-energy relationship is quite precise;the work done by the applied force on an object is identically equal to the 
+change in kinetic energy of the object.
+Example 4(Gravity and the work-energy theorem).Suppose a ball of mass m =0.2kg starts from rest at a height 
+Yo =15m above the surface of the Earth and falls down to a height yr =5.0m above the surface of the Earth.What 
+is the change in the kinetic energy?Find the final velocity using the work-energy theorem.
+Solution.As only one force acts on the ball,the change in kinetic energy is the work done by gravity,
+W*=—mg(yz —Yo)=20/.(21)
+The ball started from rest,vy,o =0.So the change in kinetic energy is 
+111AK =vs 一ae =By,Ff (22)
+We can solve Eq.(22)for the final velocity using Eq.(
+2AK _
+Vy,f =
+For the falling ball in a constant gravitation feld.th the nositive work of the gravitation force on the body corresponds 
+to an increasing kinetic energy and speed.For a rising body in the same field,the kinetic energy and hence the speed 
+decrease since the work done is negative.厂二140n1.5(23)
+D.Kinetic energy of a system 
+For system of particles,the kinetic energy of the system is the summation of the kinetic energy of the particles:
+K=dK =5x mild.(24)
+Given a system of particles,the relationship between the total kinetic energy in two different reference frames is 
+generally rather messy and unenlightening.But we know the COM frame is a very nice reference frame in the chapter 
+of momentum,as the total momentum turns out to be 0in the COM frame.Here we will find that if one of the 
+reference frames is the COM frame,the relationship between the total kinetic energy will be quite neat.
+Let S’be the COM frame,which moves at velocity @with respect to another reference frame S.Then the velocities 
+of the particles in the two reference frames are related by 
+政二伟十伟(25)
+The kinetic energy in the COM frame is 
+1_Kcom =9So mile)”.(26)
+The kinetic energy in frame S is 
+1ys 
+Ks 二亘乏二们?'z′7丿乏十al?
+1=5malt +7).史十史
+1莒乏二灬闷娜十唰砚十俪硼(27)
+二壹乏二m外蒯2十冗.〈乏二mz痘乏>十叁阀2乏二mz 
+1
+=Kcom +5Mu.
+where M is the total mass of the system,and where we have used 5),m,v;=0,by definition of the COM frame.
+Therefore,the kinetic energy in any frame equals the kinetic energy in the COM frame,plus the kinetic energy of 
+the whole system treated like a point mass M located at the COM (which moves with velocity uv).An immediate 
+corollary of this fact is that the kinetic energy in the COM frame is the smallest one among that in all the reference 
+frames.
+Il.POTENTIAL ENERGY 
+A.Conservative forces and changes in potential energies of a system 
+Whenever the work done by a force in moving an object from an initial point to a final point is independent of the 
+path,the force is called a conservative force.In other words,the work done by a conservative force F'(7)in going 
+around a closed path L is zero:
+§FG)-ar=o.(28)
+工
+Examples of conservative force are constant gravity near the surface of the Earth,the spring force and the universal 
+gravitation force.
+Consider a system consisting of two objects interacting through a conservative force.Denote Foy to be the force 
+on object 1due to the interaction with object 2and 
+dra 1=dr}一dro.(29)
+to be the relative displacement of the two objects.The change in internal potential energy of the system is 
+defined to be the negative of the work done by the conservative force when the objects undergo a relative displacement 
+from the initial state A to the final state B along any displacement that changes the initial state A to the final state 
+B,
+B 
+May.=-We=~|尼1d 口l (30)
+A 
+Our definition of potential energy only holds for conservative forces,because the work done by a conservative force 
+does not depend on the path but only on the initial and final positions.
+Depending on the specific scenario,we shall choose a zero reference potential for the potential energy of the 
+system,so that we can consider all changes in potential energy relative to this reference potential.
+Consider the example of an object falling near the surface of the Earth.Choose the system consisting of the Earth 
+and the object.The gravitational force is now an internal conservative force acting inside the system.The distance 
+separating the object and the center of mass of the Earth,and the velocities of the Earth and the object specify the 
+initial and final states.
+Let us choose a coordinate system with the origin on the surface of the Earth and the +y-direction pointing 
+away from the center of the Earth.Because the displacement of the Earth is negligible,we need only consider the 
+displacement of the object in order to calculate the change in potential energy of the system.
+Suppose the object starts at an initial height y;above the surface of the Earth and ends at final height yz.The 
+gravitational force on the object is usually approximated by F9=—mqj,the displacement is given by dr =dyj,and 
+the scalar product is given by 
+F9.dF =—mgqj -dyj =—mgdy.(31)
+The work done by the gravitational force on the object is then 
+【
+二骤一
+TM79二/FS .dr =—mg(yz —yi)-(32)
+9
+The change in potential energy is then given by 
+AU!=—W4=mgyz —mgyi-(33)
+We introduce a potential energy function U so that 
+AUY =UF 一U (34)
+Only differences in the function U%have a physical meaning.We can choose a zero reference point for the potential 
+energy anywhere we like.We have some flexibility to adapt our choice of zero for the potential energy to best fit a 
+particular problem.Because the change in potential energy only depends on the vertical displacement,Ay =ys —yi.
+In the above expression for the change of potential energy,let yg =y be an arbitrary point and y;=0denote the 
+surface of the Earth.Choose the zero reference potential for the potential energy to be at the surface of the Earth 
+corresponding to our origin y =0,with U2(0)=0.Then 
+AU*=U%(y)—U9(0)=U4(y).(35)
+Substitute y;=0,yr =y to above equations yielding a potential energy as a function of the height y above the 
+surface of the Earth,
+U%(y)=mgy,(36)
+with U9(y =0)=0.
+Notice that until here,we are talking about the potential energy of a system or a pair of objects.Due to Newton’s 
+Third Law,we need to consider the work done by a pair of forces.But what if one of the objects,object 2,is always 
+stable or can be regarded as stable?Just like the former system consisting of the Earth and the object,we can regard 
+the Earth as a stable object.Then in Eq.(29)the relative displacement is dr and 
+B 
+AU =-|Fy -ari,(37)
+A 
+which can be regarded as the potential energy of object 1,AU;.
+In one-dimensional case,with the relationship between integral and derivation we can get the conservation force 
+from potential energy,
+dU 历1二一一,3821二一5(38)
+And in general,it should be written as a gradient,
+Fy,=—VU.(39)
+Example 5(Energy diagram,Example 14.1in the textbook).The potential energy function for a particle of mass 
+m,moving in the x-direction 1s given by 
+x \°a \?
+一]一{一,40间-臭a 
+where U,and x1are positive constants and U(0)=0.(a)Sketch U(x)/U;as a function of x/x,.(b)Find the 
+points where the force on the particle is zero.Classify them as stable or unstable.(c)For energies E that lies in 
+0<E <(4/27)U,find an equation whose solution yields the turning points along the x-axis about which the particle 
+will undergo periodic motion.
+Solution.a)Figure 6shows a graph of U(x)vs.x,with the choice of values 7;=1.5m and U;=27/4J.
+b)The force on the particle is zero at the minimum of the potential which occurs at 
+x=22,/3and 乙二0.(42)which has two solutions 
+The second derivative is given by
+FIG.6.A graph of U(x)vs.a.
+When «=22;/3,
+d?U 62x122U,
+wae =2nd)=0s (3)St (3))=-Se <a 洁
+indicating the solution Z 二2r1/3represents a local maximum and hence is an unstable point.When x =0,
+d?U 622U,
+age r==ti ((S)0-())=Sree 洁
+indicating the solution Z 二0represents a local minimum and is a stable point.
+c)Consider a fixed value of the energy of the particle within the range 
+AU,U(0)=0<E <U (22,/3)=oF (46)
+If the particle at any time is found in the region rq <©<2p <2x1/3,where rq and x»are the turning points and 
+are solutions to the equation 
+z 3力N 2
+E=U(a2)二一厂一]一1一.AT 
+品1〈〈$1>(=)(47
+then the particle will undergo periodic motion between the values Xa 一习人X5b.、Within this region Xa 一乙一Xb,the 
+kinetic energy is always nonnegative because K(x)=E —U(a).There is another solution x,to Eq.(47)somewhere 
+in the region Ze。>22,/3.If the particle at any time is in the region x >x,then it at any later time it is restricted 
+to the region r.<©<+00.口
+B.Potential energy raised by gravitational force 
+Now we consider the potential energy originated by a common conservative force:gravitational force.For two 
+particles A and B with mass m,and mp,the gravitational force of A acting on B is given by 
+=TAB Fap =—Gmampz—,(48)
+"AB 
+where G is the gravitational constant,74g is the displacement vector from A to B.
+Now we fix the location of A,and move B from the position B;to By,as shown in Fig.7.We would like to calculate 
+the work of Fap acting on B.
+10
+A 一B;目
+7d7二\N Q------"-万一咤.八~二?N ~2“os ~L 度p 认
+~一一\~~_'f 一一~一
+~\
+FIG.7.Work done by the gravitational force and gravitational potential energy.
+By the definition of work we have 
+W ‖
+I;
+a 
+yy 
+a 
+1
+‖
+|
+QD 
+=
+心
+=
+口
+汀一
+E 
+3-
+|
+31
+2“(49)
+1个
+=Gmamp (*)“7
+11
+二一G饥A饥B〔F 万/773
+From Eq.(49)we can see that,the gravitational force is conservative.If we set the gravitational potential U,(r 一
++oo)=0,then from Eq.(49)we have 
+1U,(r)=—Gmamp—(50)
+Example 6(Escape velocity of Toro,from MIT OpenCourseWare 8.01).The asteroid Toro,discovered in 1964,has 
+a radius of about R =5.0km and a mass of about mz =2.0x 10!°kg.Let’s assume that Toro is a perfectly uniform 
+sphere.What is the escape velocity for an object of mass m on the surface of Toro?Could a person reach this speed 
+(on the Earth)by running?
+Solution.The only potential energy in this problem is the gravitational potential energy.We choose the zero point 
+for the potential energy to be when the object and Toro are an infinite distance apart,U@(oo)=0.With this choice,
+the potential energy when the object and Toro are a finite distance r apart is given by 
+U(r)=on (51)万
+with UC(co)=0.The expression escape velocity refers to the minimum speed necessary for an object to escape the 
+gravitational interaction of the asteroid and move off to an infinite distance away.If the object has a speed less than 
+the escape velocity,it will be unable to escape the gravitational force and must return to Toro.If the object has a 
+speed greater than the escape velocity,it will have a non-zero kinetic energy at infinity.The condition for the escape 
+velocity is that the object will have exactly zero kinetic energy at infinity.
+We choose our initial state,at time ¢;,when the object is at the surface of the asteroid with speed equal to the 
+escape velocity Uesc.We choose our final state,at time t¢,to occur when the separation distance between the asteroid 
+and the object is finite.
+The initial kinetic energy is Kk;=Le The initial potential energy is U;=—Sri and so the initial mechanical 
+energy is 
+1G 
+i 二Ki 十L =菖门飞微萱SC 一门摹亡们z (52)
+The final kinetic energy is Kz =0,because this is the condition that defines the escape velocity.The final potential 
+energy is zero,Us =0because we chose the zero point for potential energy at infinity.The final mechanical energy 
+is then 
+Ey =Ky+U;7=0.(53)

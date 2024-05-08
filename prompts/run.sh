@@ -1,1 +1,1 @@
-cat template.txt $1 | /share/ollama/ollama run llama3:70b | tee $1.tag
+cat ../prompts/template.txt $1 | /share/ollama/ollama run llama3:70b | tee $1.tag
