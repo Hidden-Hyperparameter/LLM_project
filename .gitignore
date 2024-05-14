@@ -1,4 +1,4 @@
-./src/tests/data/*
+src/tests/data/*
 !/src/tests/data/test.pdf
 !/src/tests/data/proposal_ppt_04162057.pptx
 !/src/tests/data/lec.docx

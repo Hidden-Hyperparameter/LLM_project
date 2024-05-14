@@ -1,23 +1,23 @@
-Here are 20 tags based on the context:
+Here are 20 tags based on the context of the book:
 
-1. Travel
-2. Singapore
-3. Coffee culture
-4. Old church
-5. Street food
-6. Cycling
-7. Friends gathering
-8. Traditional medicine
-9. Temple
-10. Quiet streets
-11. Foreigners
-12. Local life
-13. Cafe hopping
-14. Taylor Swift concert
-15. National Stadium
-16. Eras Tour
-17. Travel experience
-18. Urban exploration
-19. Foodie adventure
-20. Cultural immersion
+1. High-Dimensional Statistics
+2. Random Matrices
+3. Concentration Inequalities
+4. Sub-Gaussian Distributions
+5. Principal Component Analysis
+6. Semidefinite Programming
+7. Graph Theory
+8. Kernel Methods
+9. Random Projections
+10. Covariance Estimation
+11. Community Detection
+12. Error Correcting Codes
+13. Matrix Bernstein Inequality
+14. Johnson-Lindenstrauss Lemma
+15. Decoupling Techniques
+16. Hanson-Wright Inequality
+17. Anisotropic Random Vectors
+18. Symmetrization Methods
+19. Chaining Inequalities
+20. Empirical Processes
 

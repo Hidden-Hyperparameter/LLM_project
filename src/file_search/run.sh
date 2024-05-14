@@ -12,6 +12,6 @@ while [ $num -gt 0 ]; do
     num=$((num-1))
     echo "$((tot-num))/$tot"
 done
-python sublits.py > ans.txt
+python jzc_sublits.py > ans.txt
 python sublist.py > prompt_final.txt
 cat prompt_final.txt | /share/ollama/ollama run llama3:70b | tee ZHH.wzh.吊打

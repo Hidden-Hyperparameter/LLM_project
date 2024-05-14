@@ -1,4 +1,4 @@
-./tests/data/test.pdf
+./tests/data/Vershynin.pdf
 
-./tests/data/test.pdf
+./tests/data/Vershynin.pdf
 

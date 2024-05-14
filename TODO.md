@@ -1,0 +1,6 @@
+-  webUI (display markdown format)
+-  ~修改 final query 的 prompts~
+-  做 memory
+-  .epub file support
+-  video file support
+-  Vershynin sub-gaussian definition

@@ -1,0 +1,629 @@
+/opt/conda/lib/python3.10/site-packages/langchain/vectorstores/__init__.py:35: LangChainDeprecationWarning: Importing vector stores from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.vectorstores import Chroma`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25hError: source file could not be loaded
+[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25hException in thread Thread-7 (full_pdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+[?25l[?25hTesseract Open Source OCR Engine v4.1.1 with Leptonica
+Empty page!!
+Empty page!!
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+Empty page!!
+Warning:guessing pitch as xheight on row 1, block 2
+Warning:guessing pitch as xheight on row 1, block 3
+Warning:guessing pitch as xheight on row 1, block 4
+Empty page!!
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+Warning:guessing pitch as xheight on row 1, block 2
+Warning:guessing pitch as xheight on row 1, block 3
+Warning:guessing pitch as xheight on row 1, block 4
+Warning:guessing pitch as xheight on row 1, block 7
+Warning:guessing pitch as xheight on row 1, block 8
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+[?25l[?25hWarning:guessing pitch as xheight on row 1, block 2
+Warning:guessing pitch as xheight on row 1, block 3
+Warning:guessing pitch as xheight on row 1, block 4
+Warning:guessing pitch as xheight on row 1, block 5
+[?25l[?25h[?25l[?25h    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 47, in gen_10_pages
+[?25l[?25h    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/1984 (George Orwell 2016) (Z-Library).epub
+[?25l[?25hTesseract Open Source OCR Engine v4.1.1 with Leptonica
+[?25l[?25hTesseract Open Source OCR Engine v4.1.1 with Leptonica
+[?25l[?25hWarning:guessing pitch as xheight on row 1, block 7
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+Tesseract Open Source OCR Engine v4.1.1 with Leptonica
+[?25l[?25hWarning:guessing pitch as xheight on row 1, block 2
+Warning:guessing pitch as xheight on row 1, block 3
+Warning:guessing pitch as xheight on row 1, block 4
+Warning:guessing pitch as xheight on row 1, block 7
+Warning:guessing pitch as xheight on row 1, block 8
+Warning: Invalid resolution 0 dpi. Using 70 instead.
+[?25l[?25hEstimating resolution as 953
+[?25l[?25h[?25l[?25h[?25l[?25h[DB.PY]:cache cleared
+./tests/data/final ['programs'] ['屏幕截图 2024-04-03 213028.png', 'Vershynin.pdf', 'semi-conductor.pdf', 'seq2seq_lstm.png', 'other_notes.md', '2-framework+coding.pdf', '1984 (George Orwell\xa02016) (Z-Library).epub', 'task2.c', 'lm_lstm.png', 'queue.c', '屏幕截图 2024-04-03 213110.png', '1-logistic+history.pdf', '3_Smoothness.pdf', 'ablation.png', 'Lec4.pdf', 'Lec5.pdf', 'singapore_trip.pdf', 'Lec6.pdf', 'stars_sand.pdf', '屏幕截图 2024-01-20 135019.png', 'seq2seq_transformer.png', 'lm_transformer.png', '微信图片_20240229075319.jpg']
+[RUN_PROCESS]:Starting Generating Tags on 屏幕截图 2024-04-03 213028.png
+FULL_NOPDF ./tests/data/final/屏幕截图 2024-04-03 213028.png
+[RUN_PROCESS]:Starting Generating Tags on Vershynin.pdf
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/屏幕截图 2024-04-03 213028.png
+FULL_PDF ./tests/data/final/Vershynin.pdf
+[RUN_PROCESS]:Starting Generating Tags on semi-conductor.pdf
+FULL_PDF ./tests/data/final/semi-conductor.pdf
+[RUN_PROCESS]:Starting Generating Tags on seq2seq_lstm.png
+FULL_NOPDF ./tests/data/final/seq2seq_lstm.png
+[RUN_PROCESS]:Starting Generating Tags on other_notes.md
+FULL_NOPDF ./tests/data/final/other_notes.md
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/seq2seq_lstm.png
+[RUN_PROCESS]:Starting Generating Tags on 2-framework+coding.pdf
+FULL_PDF ./tests/data/final/2-framework+coding.pdf
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/other_notes.md
+[RUN_PROCESS]:Starting Generating Tags on 1984 (George Orwell 2016) (Z-Library).epub
+FULL_PDF ./tests/data/final/1984 (George Orwell 2016) (Z-Library).epub
+[RUN_PROCESS]:Starting Generating Tags on task2.c
+FULL_NOPDF ./tests/data/final/task2.c
+[RUN_PROCESS]:Starting Generating Tags on lm_lstm.png
+FULL_NOPDF ./tests/data/final/lm_lstm.png
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/task2.c
+[RUN_PROCESS]:Starting Generating Tags on queue.c
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/lm_lstm.png
+FULL_NOPDF ./tests/data/final/queue.c
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/queue.c
+[RUN_PROCESS]:Starting Generating Tags on 屏幕截图 2024-04-03 213110.png
+FULL_NOPDF ./tests/data/final/屏幕截图 2024-04-03 213110.png
+[RUN_PROCESS]:Starting Generating Tags on 1-logistic+history.pdf
+FULL_PDF ./tests/data/final/1-logistic+history.pdf
+[RUN_PROCESS]:Starting Generating Tags on 3_Smoothness.pdf
+FULL_PDF ./tests/data/final/3_Smoothness.pdf
+[RUN_PROCESS]:Starting Generating Tags on ablation.png
+FULL_NOPDF ./tests/data/final/ablation.png
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/屏幕截图 2024-04-03 213110.png
+[RUN_PROCESS]:Starting Generating Tags on Lec4.pdf
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/ablation.png
+FULL_PDF ./tests/data/final/Lec4.pdf
+[RUN_PROCESS]:Starting Generating Tags on Lec5.pdf
+[QUERY_LLM] running llama3 70b
+FULL_PDF ./tests/data/final/Lec5.pdf
+[RUN_PROCESS]:Starting Generating Tags on singapore_trip.pdf
+FULL_PDF ./tests/data/final/singapore_trip.pdf
+[RUN_PROCESS]:Starting Generating Tags on Lec6.pdf
+FULL_PDF ./tests/data/final/Lec6.pdf
+[RUN_PROCESS]:Starting Generating Tags on stars_sand.pdf
+FULL_PDF ./tests/data/final/stars_sand.pdf
+[RUN_PROCESS]:Starting Generating Tags on 屏幕截图 2024-01-20 135019.png
+FULL_NOPDF ./tests/data/final/屏幕截图 2024-01-20 135019.png
+[RUN_PROCESS]:Starting Generating Tags on seq2seq_transformer.png
+FULL_NOPDF ./tests/data/final/seq2seq_transformer.png
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/屏幕截图 2024-01-20 135019.png
+[RUN_PROCESS]:Starting Generating Tags on lm_transformer.png
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/seq2seq_transformer.png
+FULL_NOPDF ./tests/data/final/lm_transformer.png
+[RUN_PROCESS]:Starting Generating Tags on 微信图片_20240229075319.jpg
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/lm_transformer.png
+FULL_NOPDF ./tests/data/final/微信图片_20240229075319.jpg
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/微信图片_20240229075319.jpg
+./tests/data/final/programs ['__pycache__'] ['run.py', 'dependency.py', 'ocr.py', '__init__.py', 'install.sh', 'others.py']
+[RUN_PROCESS]:Starting Generating Tags on run.py
+FULL_NOPDF ./tests/data/final/programs/run.py
+[RUN_PROCESS]:Starting Generating Tags on dependency.py
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/run.py
+FULL_NOPDF ./tests/data/final/programs/dependency.py
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/dependency.py
+[RUN_PROCESS]:Starting Generating Tags on ocr.py
+FULL_NOPDF ./tests/data/final/programs/ocr.py
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/ocr.py
+[RUN_PROCESS]:Starting Generating Tags on __init__.py
+FULL_NOPDF ./tests/data/final/programs/__init__.py
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__init__.py
+[RUN_PROCESS]:Starting Generating Tags on install.sh
+FULL_NOPDF ./tests/data/final/programs/install.sh
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/install.sh
+[RUN_PROCESS]:Starting Generating Tags on others.py
+FULL_NOPDF ./tests/data/final/programs/others.py
+[OCR.PY]: running ocr for /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/others.py
+./tests/data/final/programs/__pycache__ [] ['others.cpython-38.pyc', 'others.cpython-310.pyc', 'dependency.cpython-310.pyc', '__init__.cpython-38.pyc', 'ocr.cpython-310.pyc', '__init__.cpython-310.pyc']
+[RUN_PROCESS]:Starting Generating Tags on others.cpython-38.pyc
+FULL_PDF ./tests/data/final/programs/__pycache__/others.cpython-38.pyc
+[RUN_PROCESS]:Starting Generating Tags on others.cpython-310.pyc
+FULL_PDF ./tests/data/final/programs/__pycache__/others.cpython-310.pyc
+[RUN_PROCESS]:Starting Generating Tags on dependency.cpython-310.pyc
+FULL_PDF ./tests/data/final/programs/__pycache__/dependency.cpython-310.pyc
+[RUN_PROCESS]:Starting Generating Tags on __init__.cpython-38.pyc
+FULL_PDF ./tests/data/final/programs/__pycache__/__init__.cpython-38.pyc
+[RUN_PROCESS]:Starting Generating Tags on ocr.cpython-310.pyc
+FULL_PDF ./tests/data/final/programs/__pycache__/ocr.cpython-310.pyc
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/2600793_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[RUN_PROCESS]:Starting Generating Tags on __init__.cpython-310.pyc
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/363137054_10pages.pdf
+FULL_PDF ./tests/data/final/programs/__pycache__/__init__.cpython-310.pyc
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/111934868_10pages.pdf
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/146454566_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/412778077_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/221268943_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/602756140_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/612319745_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/64160209/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/905121793/page0-page10.pdf
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/667404590_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+Error: source file could not be loaded
+[?25l[?25hException in thread Thread-32 (full_pdf):
+Traceback (most recent call last):
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 42, in gen_10_pages
+    subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
+  File "/opt/conda/lib/python3.10/subprocess.py", line 421, in check_output
+[?25l[?25h    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/opt/conda/lib/python3.10/subprocess.py", line 526, in run
+Exception in thread Thread-35 (full_pdf):
+Traceback (most recent call last):
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 42, in gen_10_pages
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['soffice', '--headless', '--convert-to', 'pdf', '"/ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/dependency.cpython-310.pyc"']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
+  File "/opt/conda/lib/python3.10/subprocess.py", line 421, in check_output
+Exception in thread Thread-30 (full_pdf):
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/opt/conda/lib/python3.10/subprocess.py", line 526, in run
+[?25l[?25hTraceback (most recent call last):
+    raise CalledProcessError(retcode, process.args,
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+subprocess.CalledProcessError: Command '['soffice', '--headless', '--convert-to', 'pdf', '"/ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/__init__.cpython-310.pyc"']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 47, in gen_10_pages
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 44, in gen_10_pages
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 44, in gen_10_pages
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/others.cpython-38.pyc
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/__init__.cpython-310.pyc
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/dependency.cpython-310.pyc
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hError: source file could not be loaded
+Exception in thread Thread-34 (full_pdf):
+Traceback (most recent call last):
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 42, in gen_10_pages
+[?25l[?25h    subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
+  File "/opt/conda/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/opt/conda/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['soffice', '--headless', '--convert-to', 'pdf', '"/ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/ocr.cpython-310.pyc"']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 44, in gen_10_pages
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/ocr.cpython-310.pyc
+Exception in thread Thread-33 (full_pdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 47, in gen_10_pages
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/__init__.cpython-38.pyc
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO - Start processing 7 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+Error: source file could not be loaded
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h[?25l[?25hException in thread Thread-31 (full_pdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 81, in full_pdf
+    gen_10_pages(file,out_path=out_path)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/utils/others.py", line 47, in gen_10_pages
+    raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
+RuntimeError: [GEN_PAGES][31m[ERROR][0m:Failure to OCR file /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/programs/__pycache__/others.cpython-310.pyc
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h[?25l[?25h   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+WARNING -    7: page has no images - all vector content will be rasterized at 400 DPI, losing some resolution and likely increasing file size. Use --oversample to adjust the DPI.
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h[?25l[?25h   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+WARNING -    6: page has no images - all vector content will be rasterized at 400 DPI, losing some resolution and likely increasing file size. Use --oversample to adjust the DPI.
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h[?25l[?25h   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+[?25l⠙ [?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠹ [?25h   INFO - Start processing 10 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[2K[1G⠼ [?25h   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+WARNING -    5: page has no images - all vector content will be rasterized at 400 DPI, losing some resolution and likely increasing file size. Use --oversample to adjust the DPI.
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -   10: page already has text! - rasterizing text and running OCR anyway
+[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h  ERROR -    1:    **** Error: /BBox has zero width or height, which is not allowed.
+               Output may be incorrect.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Start processing 9 pages concurrently
+   INFO - Using Tesseract OpenMP thread limit 3
+[?25l[?25h[?25l[?25h   INFO -    1: page already has text! - rasterizing text and running OCR anyway
+   INFO -    3: page already has text! - rasterizing text and running OCR anyway
+   INFO -    2: page already has text! - rasterizing text and running OCR anyway
+   INFO -    4: page already has text! - rasterizing text and running OCR anyway
+   INFO -    7: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h   INFO -    5: page already has text! - rasterizing text and running OCR anyway
+   INFO -    6: page already has text! - rasterizing text and running OCR anyway
+   INFO -    9: page already has text! - rasterizing text and running OCR anyway
+   INFO -    8: page already has text! - rasterizing text and running OCR anyway
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠋ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠹ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    1: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h/opt/conda/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hException in thread Thread-27 (full_nopdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 74, in full_nopdf
+    make_db_from_text(file,texts,quiet=quiet)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/db/db.py", line 55, in make_db_from_text
+    docsearch_chroma=Chroma.from_documents(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 778, in from_documents
+    return cls.from_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 736, in from_texts
+    chroma_collection.add_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 324, in add_texts
+    self._collection.upsert(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 477, in upsert
+    ) = self._validate_embedding_set(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 545, in _validate_embedding_set
+    valid_ids = validate_ids(maybe_cast_one_to_many_ids(ids))
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/types.py", line 228, in validate_ids
+    raise ValueError(f"Expected IDs to be a non-empty list, got {ids}")
+ValueError: Expected IDs to be a non-empty list, got []
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    1: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    2: [tesseract] lots of diacritics - possibly poor OCR
+[?25l⠙ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    7: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    3: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -   10: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25hWARNING -    6: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    7: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    4: [tesseract] lots of diacritics - possibly poor OCR
+   INFO -    4: [tesseract] no best words!!
+   INFO -    4: [tesseract] no best words!!
+   INFO -    4: [tesseract] no best words!!
+   INFO -    5: [tesseract] no best words!!
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    8: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    2: [tesseract] lots of diacritics - possibly poor OCR
+   INFO -    2: [tesseract] no best words!!
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING -    2: [tesseract] lots of diacritics - possibly poor OCR
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO -    7: [tesseract] no best words!!
+   INFO -    7: [tesseract] no best words!!
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠙ [?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[2K[1G⠹ [?25hException in thread Thread-1 (full_nopdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 74, in full_nopdf
+    make_db_from_text(file,texts,quiet=quiet)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/db/db.py", line 55, in make_db_from_text
+    docsearch_chroma=Chroma.from_documents(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 778, in from_documents
+    return cls.from_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 736, in from_texts
+    chroma_collection.add_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 324, in add_texts
+    self._collection.upsert(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 477, in upsert
+    ) = self._validate_embedding_set(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 545, in _validate_embedding_set
+    valid_ids = validate_ids(maybe_cast_one_to_many_ids(ids))
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/types.py", line 228, in validate_ids
+    raise ValueError(f"Expected IDs to be a non-empty list, got {ids}")
+ValueError: Expected IDs to be a non-empty list, got []
+   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 2.37× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.2%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 3.49× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.2%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 9.90× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 7.66× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l⠋ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+   INFO - Optimize ratio: 1.00 savings: -0.2%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 5.48× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 9.51× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l⠙ [?25hWARNING - The output file size is 14.86× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠼ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hException in thread Thread-11 (full_nopdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 74, in full_nopdf
+    make_db_from_text(file,texts,quiet=quiet)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/db/db.py", line 55, in make_db_from_text
+    docsearch_chroma=Chroma.from_documents(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 778, in from_documents
+    return cls.from_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 736, in from_texts
+    chroma_collection.add_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 324, in add_texts
+    self._collection.upsert(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 477, in upsert
+    ) = self._validate_embedding_set(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 545, in _validate_embedding_set
+    valid_ids = validate_ids(maybe_cast_one_to_many_ids(ids))
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/types.py", line 228, in validate_ids
+    raise ValueError(f"Expected IDs to be a non-empty list, got {ids}")
+ValueError: Expected IDs to be a non-empty list, got []
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25hWARNING - The output file size is 10.76× larger than the input file.
+Possible reasons for this include:
+The argument --force-ocr was issued, causing transcoding.
+The optional dependency 'jbig2' was not found, so some image optimizations could not be attempted.
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.0%
+   INFO - Image optimization did not improve the file - discarded
+[?25l⠋ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠹ [?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[2K[1G⠼ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Optimize ratio: 1.00 savings: -0.1%
+   INFO - Image optimization did not improve the file - discarded
+[?25l[?25h[?25l[?25h[?25l[?25h   INFO - Output file is a PDF/A-2B (as expected)
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25hException in thread Thread-23 (full_nopdf):
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/run_process.py", line 74, in full_nopdf
+    make_db_from_text(file,texts,quiet=quiet)
+  File "/ssdshare/.2024040125_2023040165_2023040163_project/src/db/db.py", line 55, in make_db_from_text
+    docsearch_chroma=Chroma.from_documents(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 778, in from_documents
+    return cls.from_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 736, in from_texts
+    chroma_collection.add_texts(
+  File "/opt/conda/lib/python3.10/site-packages/langchain_community/vectorstores/chroma.py", line 324, in add_texts
+    self._collection.upsert(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 477, in upsert
+    ) = self._validate_embedding_set(
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/models/Collection.py", line 545, in _validate_embedding_set
+    valid_ids = validate_ids(maybe_cast_one_to_many_ids(ids))
+  File "/opt/conda/lib/python3.10/site-packages/chromadb/api/types.py", line 228, in validate_ids
+    raise ValueError(f"Expected IDs to be a non-empty list, got {ids}")
+ValueError: Expected IDs to be a non-empty list, got []
+[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l⠙ [?25h[?25l[2K[1G⠹ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[2K[1G⠴ [?25h[?25l[2K[1G⠦ [?25h[?25l[2K[1G⠧ [?25h[?25l[2K[1G⠇ [?25h[?25l[2K[1G⠏ [?25h[?25l[2K[1G⠋ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠙ [?25h[?25l[2K[1G⠸ [?25h[?25l[2K[1G⠼ [?25h[?25l[?25l[2K[1G[?25h[2K[1G[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[OCR.PY]:pdf file written in /ssdshare/.it/ocr/854582676/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/391199555/page0-page10.pdf
+[OCR.PY]: running ocr for /ssdshare/.it/ocr/403178899_10pages.pdf
+[OCR.PY]:Running ocr for pdf files
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/185939972/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/220054176/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/96223443/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/127015283/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/26477032/page0-page10.pdf
+[OCR.PY]:pdf file written in /ssdshare/.it/ocr/89641053/page0-page10.pdf
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[RUN_PROCESS]: Generating Tags on 屏幕截图 2024-04-03 213028.png finished
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[RUN_PROCESS]: Generating Tags on Vershynin.pdf finished
+[RUN_PROCESS]: Generating Tags on semi-conductor.pdf finished
+[RUN_PROCESS]: Generating Tags on seq2seq_lstm.png finished
+[RUN_PROCESS]: Generating Tags on other_notes.md finished
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[QUERY_LLM] running llama3 70b
+[RUN_PROCESS]: Generating Tags on 2-framework+coding.pdf finished
+[RUN_PROCESS]: Generating Tags on 1984 (George Orwell 2016) (Z-Library).epub finished
+[RUN_PROCESS]: Generating Tags on task2.c finished
+[RUN_PROCESS]: Generating Tags on lm_lstm.png finished
+[RUN_PROCESS]: Generating Tags on queue.c finished
+[RUN_PROCESS]: Generating Tags on 屏幕截图 2024-04-03 213110.png finished
+[RUN_PROCESS]: Generating Tags on 1-logistic+history.pdf finished
+[RUN_PROCESS]: Generating Tags on 3_Smoothness.pdf finished
+[RUN_PROCESS]: Generating Tags on ablation.png finished
+[RUN_PROCESS]: Generating Tags on Lec4.pdf finished
+[RUN_PROCESS]: Generating Tags on Lec5.pdf finished
+[QUERY_LLM] running llama3 70b
+[RUN_PROCESS]: Generating Tags on singapore_trip.pdf finished
+[RUN_PROCESS]: Generating Tags on Lec6.pdf finished
+[RUN_PROCESS]: Generating Tags on stars_sand.pdf finished
+[RUN_PROCESS]: Generating Tags on 屏幕截图 2024-01-20 135019.png finished
+[RUN_PROCESS]: Generating Tags on seq2seq_transformer.png finished
+[RUN_PROCESS]: Generating Tags on lm_transformer.png finished
+[RUN_PROCESS]: Generating Tags on 微信图片_20240229075319.jpg finished
+[RUN_PROCESS]: Generating Tags on run.py finished
+[RUN_PROCESS]: Generating Tags on dependency.py finished
+[RUN_PROCESS]: Generating Tags on ocr.py finished
+[RUN_PROCESS]: Generating Tags on __init__.py finished
+[RUN_PROCESS]: Generating Tags on install.sh finished
+[RUN_PROCESS]: Generating Tags on others.py finished
+[RUN_PROCESS]: Generating Tags on others.cpython-38.pyc finished
+[RUN_PROCESS]: Generating Tags on others.cpython-310.pyc finished
+[RUN_PROCESS]: Generating Tags on dependency.cpython-310.pyc finished
+[RUN_PROCESS]: Generating Tags on __init__.cpython-38.pyc finished
+[RUN_PROCESS]: Generating Tags on ocr.cpython-310.pyc finished
+[RUN_PROCESS]: Generating Tags on __init__.cpython-310.pyc finished

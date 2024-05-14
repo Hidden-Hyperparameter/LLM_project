@@ -3,11 +3,12 @@ import threading
 import subprocess
 import json
 
-from utils.others import gen_10_pages,encode
+from utils.others import gen_10_pages,encode,filetype
 from utils.ocr import OCR,TMP_DIR
 from db.db import make_db_from_text,clear_cache
-LOG_DIR = '/ssdshare/.it/files.json'
-OCR_LOG_DIR = '/ssdshare/.it/ocr/log.txt'
+LOG_DIR = '/ssdshare/.it/files2.json'
+IMMUTABLE = '/ssdshare/.it/ocr/'
+OCR_LOG_DIR = IMMUTABLE + 'log2.txt'
 query_lock = threading.Lock()
 log_lock = threading.Lock()
 
@@ -53,10 +54,11 @@ def _log(file,tags):
         print(f'[RUN_PROCESS][WARNING]:file {file} is already processed, so we overwrite.')
     dic[file]=tags
     with open(LOG_DIR,'w') as fw:
-        json.dump(dic,fw)
+        json.dump(dic,fw,indent=4)
 
 
 def full_nopdf(file:str,quiet,ocr_log_dir):
+    print('FULL_NOPDF',file)
     file = os.path.abspath(file)
     texts = OCR(file,quiet=quiet)
     with query_lock:
@@ -73,8 +75,19 @@ def full_nopdf(file:str,quiet,ocr_log_dir):
     
 
 def full_pdf(file:str,quiet):
+    print('FULL_PDF',file)
+    file = os.path.abspath(file)
     out_path = os.path.join(TMP_DIR,encode(file)+'_10pages.pdf')
-    gen_10_pages(file,out_path=out_path)
+    try:
+        gen_10_pages(file,out_path=out_path)
+    except BaseException as e:
+        if not quiet:
+            print('[RUN_PROCESS]: \033[31m[FATAL]\033[0m OCR EXCEPTION:',e)
+        with query_lock:
+            tags = query_llm(file,file,quiet)
+        with log_lock:
+            _log(file,tags)
+        return 
     out_path = os.path.abspath(out_path)
     texts = OCR(out_path,quiet=quiet)
     os.remove(out_path)
@@ -92,10 +105,11 @@ def make_db(file:str,ocr_log_dir:str,quiet):
         subprocess.Popen(['python','./ocr_process.py','--file','\"'+file+'\"','--log-dir','\"'+ocr_log_dir+'\"'])
 
 
-READABLES = ['.jpg', '.jpeg', '.png','.py', '.txt', '.cpp', '.tex', '.md', '.java', '.html', '.css','.sh','.bat']
+NOT_READABLE = ['pdf','pptx','ppt','doc','docx','png','jpg','jpeg']
 
 def clear_all(ocr_log_dir):
     """Clear all log files"""
+    os.makedirs('/ssdshare/.it/ocr',exist_ok=True)
     clear_cache()
     with open(ocr_log_dir,'w') as fw:
         fw.write('')
@@ -113,22 +127,18 @@ def run(root_dir = './tests/data/hierarchical_data_simple',ocr_log_dir=OCR_LOG_D
     """
     # remove the ocr log, so it can only be run once.
     clear_all(ocr_log_dir)
-
-    def check_suffix(s,c):
-        for i in c:
-            if s.endswith(i):
-                return True
-        return False
     l = os.walk(root_dir)
     threads = []
     failures = []
     # first spread out threads to create tags
     for dirname,dirs,files in l:
-        print(dirname,dirs,files)
+        if not quiet:
+            print(dirname,dirs,files)
         for file in files:
             if not quiet:   
                 print(f'[RUN_PROCESS]:Starting Generating Tags on {file}')
-            if check_suffix(file,READABLES):
+            if filetype(file) in ['text','image']:
+                # file is readable
                 thread = threading.Thread(target=full_nopdf,args=(os.path.join(dirname,file),quiet,ocr_log_dir))
             else:
                 full_path = os.path.join(dirname,file)
@@ -138,13 +148,13 @@ def run(root_dir = './tests/data/hierarchical_data_simple',ocr_log_dir=OCR_LOG_D
             threads.append((thread,file))
     for thread,name in threads:
         thread.join()
-        if not quiet:   
+        if not quiet:
             print(f'[RUN_PROCESS]: Generating Tags on {name} finished')
     # then spread out no-returning threads for OCR & chroma db, and make logs
-    for file in failures:
-        print(f'[RUN_PROCESS]: OCR on {file} beginning....')
-        thread = threading.Thread(target=make_db,args=(file,ocr_log_dir,quiet))
-        thread.start()
+    # for file in failures:
+    #     print(f'[RUN_PROCESS]: OCR on {file} beginning....')
+    #     thread = threading.Thread(target=make_db,args=(file,ocr_log_dir,quiet))
+    #     thread.start()
 
 if __name__ == '__main__':
-    run(root_dir='./tests/data/hierarchical_data_complex',quiet=False)
+    run(root_dir='./tests/data/simple_pptx',quiet=False)

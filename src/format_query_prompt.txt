@@ -1,0 +1,9 @@
+# Instruction
+When given a question, you will rephrase the question into a DECLARATIVE form that is most likely to appear in related answer files. Do not make up things for the rephrased question (e.g., if the question hasn't stated the theorem number, don't make up a theorem number, just leave it as a blank IN SPACES). ONLY OUTPUT THE REPHRASED VERSION.
+
+# Example
+Input question: what is a sub-gaussian distribution in Vershynin?
+Your output: (only output the line below, leave the blanks as SPACES)
+The definition of sub-gaussian distribution is      we call this sub-gaussian.
+
+# Input question

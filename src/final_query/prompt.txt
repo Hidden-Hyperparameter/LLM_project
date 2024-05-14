@@ -1,46 +1,43 @@
 # Context
-File Name: ./tests/data/test.pdf
+File Name: ./tests/data/Vershynin.pdf
 ------------
-9.6Euclidean Domains,Principal Ideal Domains and 
-Unique Factorization Domains 270
-Euclidean Domains 270
-Principal Ideal Domains (PI.D.s)279
-Unique Factorization Domains (U.F.D.s)283
-Polynomial Rings 295
-Definitions and Basic Properties 295
-Polynomial Rings over Fields |299
-Polynomial Rings that are Unique Factorization Domains 
-303
-Irreducibility Criteria 307
-Polynomial Rings over Fields Il 313
-Polynomials in Several Variables over a Field and Grébner 
-Bases 315
+with independent N (0,1)entries.Then,for every t >0,we have 
+P {|All =>/m+J/n+t}<2exp(—cr’).
+Proof This result follows by combining Theorem 7.3.1with the concentration inequality 
+in Gaussian space,Theorem 5.2.2.
+To use concentration,let us view A as a long random vector in R”*”by concatenating 
+the rows.This makes A a standard normal random vector,i.e.A ~N(O,Inm).Consider the 
+function f(A):=||A||that assigns to the vector A the operator norm of the matrix A.We 
+have 
+F(A)=IlAll2,
 ==========
-domain we are considering is understood we shall occasionally denote f|,4again simply 
-as f even though these are formally different functions (their domains are different).
-If AC Band g:A —C and there is a function f :B >C such that f|,=g,
-we Shall say f is an extension of g to B (such a map f need not exist nor be unique).
-Let A be a nonempty set.
-(1)A binary relation on aset A is asubset R of A x Aand wewritea ~bif(a,b)€R.
-(2)The relation ~on A is said to be:
+(Theorem 5.4.8)instead of that of Golden and Thompson.In this book,we mainly follow 
+Tropp’s proof of Theorem 5.4.1.The book [201]presents a self-contained proof of Lieb’s 
+inequality (Theorem 5.4.8),the matrix Hoeffding inequality from Exercise 5.4.12,the matrix 
+Chernoff inequality,and much more.Owing to Tropp’s contributions,there now exist matrix 
+analogs of almost all the classical scalar concentration results [201].The survey [161]dis-
 ==========
-to B and the value of f ata is denoted f(a)(i.e.,we shall apply all our functions on 
-the left).We use the words function and map interchangeably.The set A is called the 
-domain of f and B is called the codomain of f.The notation f :ath bora br bif f 
-is understood indicates that f(a)=b,i.e.,the function is being specified on elements.
-If the function f is not specified on elements it is important in general to check
+independent sub-gaussian rows.We used the ¢-net argument to control the norm of A as 
+follows:
+E||All <v 十CV7,
+where C is a constant.(See Exercise 4.6.3.)We now use the Sudakov—Fernique inequality to 
+improve upon this bound for Gaussian random matrices,showing that it holds with a sharp 
+constant C =1.
+Theorem 7.3.1(Norms of Gaussian random matrices)Let A be an m x n matrix with 
+independent N(O,1)entries.Then 
+E||Al|</m+Vn.
 ==========
-Noetherian Rings and Affine Algebraic Sets 656
-Radicals and Affine Varieties 673
-integral Extensions and Hilbert’s Nullstellensatz 691
-Localization 706
-The Prime Spectrum of a Ring 731
-Artinian Rings,Discrete Valuation Rings,and 
-Dedekind Domains 750
-Artinian Rings 750
-Discrete Valuation Rings 755
-Dedekind Domains 764
-Contents
+and the radius,which we define as 
+rad(T):=sup ||x|l2.(8.47)
+xeT 
+Theorem 8.7.1(Sub-gaussian Chevet inequality)Let A be anm xn random matrix whose 
+entries Aj;are independent mean-zero sub-gaussian random variables.Let T C IR"and 
+S C R”be arbitrary bounded sets.Then 
+E sup (Ax,y)<CK (w(T)rad(S)+w(S)rad(T))
+xé€T,yeS$
+where K =Max;j l|Ai;Il v-
+Before we prove this theorem,let us make one simple ulustration of its use.Setting T =
+S"—!and §=S™—!,we recover a bound on the operator norm of A,
 ==========
 
 
@@ -58,7 +55,7 @@ Sources:
 1. ./test/data/test.pdf
 
 # Question
-What is an integral domain
+what is the theorem in Vershynin that is about matrix norm concentration: : Pr(||M||_{op}>\lambda \sqrt{n})\leq exp(-c\lambda n)
 
 
 # Answer Based on Given Context

@@ -1,3 +1,0 @@
-You are a smart file finder. Each file may have several tags. YOU MUST NOT MAKE UP FILE NAMES!
-ONLY OUTPUT FILE NAMES! Find all files with tag "graph theory" :\n
-##############################################################

@@ -1,0 +1,24 @@
+Number of files created: 2
+2
+-----------------------------
+1/2
+2/2
+[OCR.PY]:Running ocr for pdf files
+**Approximately 4 x 10^20 grains of sand**
+===============
+
+According to the context, we can estimate the total number of grains of sand by calculating the volume of all beaches and then converting it into the number of grains. 
+
+The total length of all beaches is approximately 75 million kilometers (7.5 billion meters). Assuming an average width of 50 meters and a depth of 10 meters, we can calculate the volume of all beaches as follows:
+
+`50米宽 x 10米深 x 7.5亿米长 = 3750亿立方米`
+
+With each cubic meter containing approximately 10 billion grains of sand, we can estimate the total number of grains of sand as:
+
+`37.5 billion cubic meters x 10 billion grains/cubic meter = 37.5 trillion grains`
+
+Rounded to a more manageable number, this is approximately **4 x 10^20** grains of sand.
+
+*Sources:*
+* /ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/final/stars_sand.pdf
+

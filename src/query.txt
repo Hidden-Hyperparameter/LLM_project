@@ -1,1 +1,1 @@
-What is an integral domain
+what is the theorem in Vershynin that is about matrix norm concentration: : Pr(||M||_{op}>\lambda \sqrt{n})\leq exp(-c\lambda n)

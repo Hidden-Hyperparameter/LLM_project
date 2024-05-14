@@ -2,7 +2,7 @@ import PyPDF2
 import subprocess
 import os
 import fitz
-from .others import encode
+from .others import encode,filetype
 TMP_DIR = '/ssdshare/.it/ocr'
 
 
@@ -127,6 +127,7 @@ def _raw_OCR(file_path:str,remove_mid=True,quiet=True):
         print(f'[OCR.PY]: running ocr for {file_path}')
     file_real,file_suffix = os.path.splitext(file_path)[:2]
     file_name = os.path.basename(file_real)
+    
     if os.path.isdir(file_path):
         raise NotImplementedError(f'have not implemented ocr on file type as {file_path}')    
     elif file_suffix=='.pdf':
@@ -134,12 +135,13 @@ def _raw_OCR(file_path:str,remove_mid=True,quiet=True):
         return OCR_PDF(file_path,quiet=quiet,remove=remove_mid)
     elif file_suffix in ['.jpg', '.jpeg', '.png']:
         return OCR_PNG(file_path,file_suffix,remove_mid)
-    elif file_suffix in ['.py', '.txt', '.cpp', '.tex', '.md', '.java', '.html', '.css','','.sh','.bat']:
+    elif filetype(file_path)=='text':
         return open(file_path, 'r').read()
     else:
         try:
             subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
         except subprocess.CalledProcessError:
+            return open(file_path, 'r').read()
             raise RuntimeError(f'Failure to OCR file {file_path}')        
         out_path = f'./{file_name}.pdf'
         txt = OCR_PDF(out_path,remove=remove_mid,quiet=quiet)
@@ -148,6 +150,7 @@ def _raw_OCR(file_path:str,remove_mid=True,quiet=True):
         else:
             subprocess.run(['mv',out_path,file_real + '.pdf'])
         return txt
+        
         
 def OCR(file_path:str,remove_mid=True,quiet=True):
     """Do OCR for all files. Return the text string"""

@@ -1,6 +1,7 @@
 import PyPDF2
 import os
 import subprocess
+import mimetypes
 TMP_DIR_1 = '/ssdshare/.it/utils/'
 
 Len = 16**6
@@ -37,10 +38,13 @@ def gen_10_pages(file_path,out_path=None):
         file_real,file_suffix = os.path.splitext(file_path)[:2]
         file_name = os.path.basename(file_real)
         try:
+            # print(' '.join(['soffice', '--headless', '--convert-to', 'pdf',file_path]))
             subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
         except subprocess.CalledProcessError:
-            raise RuntimeError(f'Failure to OCR file {file_path}') 
+            raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
         tmp_out_path = f'./{file_name}.pdf'
+        if not os.path.exists(tmp_out_path):
+            raise RuntimeError(f'[GEN_PAGES]\033[31m[ERROR]\033[0m:Failure to OCR file {file_path}')
         _gen_10_pages(tmp_out_path,out_path)
         os.remove(tmp_out_path)
     else:
@@ -56,6 +60,16 @@ def gen_last_pages(file_path,out_path):
             pdf_writer.add_page(page)
         with open(out_path, 'wb') as output_file:
             pdf_writer.write(output_file)
+
+def filetype(filename):
+    """
+    Input: file name optionally with path
+    Output: file type: 'text', 'image', 'audio', 'video', 'application' (binary file)
+    """
+    kind, _ = mimetypes.guess_type(filename)
+    if kind == None:
+        return 'text'
+    return kind.split('/')[0]
 
 if __name__ == '__main__':
     print(Jzchash('/ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/hierarchical_data_simple/dir/note_for_lec07.md'))

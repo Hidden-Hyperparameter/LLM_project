@@ -96,6 +96,9 @@ def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
     """
     s = []
     for file in files:
+        if not os.path.exists(file):
+            print(f'\033[31m [DB.PY:WARNING]\033[0m : CANNOT find file {file}, skipping it instead.')
+            continue
         list_of_texts = query_db_from_file(file,query,quiet=quiet)
         s.extend([f'File Name: {file}\n------------\n','']+[c+'\n==========\n' for c in list_of_texts])
     open(save_dir,'w').writelines(s)
