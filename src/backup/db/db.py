@@ -1,13 +1,33 @@
 PERSIST_DIR = '/ssdshare/.it/chroma/'
 import os
-import importlib
 import utils.ocr
-importlib.reload(utils.ocr)
 from utils.ocr import OCR
 from utils.others import encode
-LOG_DIR = os.path.join(PERSIST_DIR,'.chroma_data')
+import sys
+# sys.path.append('..')
+# from ..jzc_utils import GetDBLog
+DB_LOG_DIR = '/ssdshare/.it/db_log.txt'
+LOG_DIR = '/ssdshare/.it/db_log.txt'
 from langchain.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
+def GetDBLog():
+    """JZC implementation.
+    inputs: None
+    outputs: `logs`: a list containing all files for which chroma db is created
+    """
+    if not os.path.exists(DB_LOG_DIR):
+        return []
+    with open(DB_LOG_DIR, 'r') as f:
+        logs = f.readlines()
+        logs = [log.replace('\n', '') for log in logs]
+    return logs
+def WriteDBLog(file_name):
+    """jzc"""
+    logs = GetDBLog()
+    logs.append(file_name)
+    with open(DB_LOG_DIR, 'w') as f:
+        for log in logs:
+            f.write(log + '\n')
 def _query_chroma(ch:Chroma,q:str):
     if q == '':
         return
@@ -28,6 +48,7 @@ def clear_cache():
     print('[DB.PY]:cache cleared')
 
 def getlogs():
+    return GetDBLog()
     os.makedirs(PERSIST_DIR,exist_ok=True)
     files = None
     # check whether the file is in record, so we can reuse the old chroma
@@ -63,12 +84,14 @@ def make_db_from_text(filename:str,texts:str,quiet=True):
 def query_db_from_file(file:str,query:str,quiet=True):
     """query `query` from chroma db, given context `file`
     notice that `file` is a path."""
+    sys.stderr.writelines(['[query][[[[[[[]]]]]]]',query])
     file = os.path.abspath(file)
     files = getlogs()
     # load chroma embedding
     minilm_embedding = SentenceTransformerEmbeddings(model_name="/share/embedding/all-MiniLM-L6-v2/")
     chroma_dir = os.path.join(PERSIST_DIR,'chroma_db')
     if file in files:
+        sys.stderr.write(f'loading old chroa db from {file}')
         # load old chroma db
         if not quiet:
             print('[DB.PY]:returning old chroma db')
@@ -78,14 +101,15 @@ def query_db_from_file(file:str,query:str,quiet=True):
             embedding_function=minilm_embedding),query)
     else:
         # create new chroma db
+        sys.stderr.write(f'[DB.PY]:running ocr for {file}')
+        # raise NotImplementedError()
         if not quiet:
             print('[DB.PY]:running ocr')
         texts = OCR(file,remove_mid=True)
         docsearch_chroma = make_db_from_text(file,texts,quiet=quiet)
+        sys.stderr.write('[DB.PY new]:test')
         # save records
-        files.append(file)
-        with open(LOG_DIR,'w') as f:
-            f.write('\n'.join(files))
+        WriteDBLog(file)
         return _query_chroma(docsearch_chroma,query)
 
 def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
@@ -100,6 +124,9 @@ def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
             print(f'\033[31m [DB.PY:WARNING]\033[0m : CANNOT find file {file}, skipping it instead.')
             continue
         list_of_texts = query_db_from_file(file,query,quiet=quiet)
+        if len(list_of_texts) == 0:
+            raise BaseException()
+            # list_of_texts = ['None.']
         s.extend([f'File Name: {file}\n------------\n','']+[c+'\n==========\n' for c in list_of_texts])
     open(save_dir,'w').writelines(s)
     

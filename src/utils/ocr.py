@@ -141,9 +141,10 @@ def _raw_OCR(file_path:str,remove_mid=True,quiet=True):
         try:
             subprocess.check_output(['soffice', '--headless', '--convert-to', 'pdf',file_path])
         except subprocess.CalledProcessError:
-            return open(file_path, 'r').read()
-            raise RuntimeError(f'Failure to OCR file {file_path}')        
+            return file_path+"(Could not be OCR'ed, maybe a binary file or other unsupported file type)"     
         out_path = f'./{file_name}.pdf'
+        if not os.path.exists(out_path):
+            raise RuntimeError(f'[OCR]: ocr for {file_path} failed')
         txt = OCR_PDF(out_path,remove=remove_mid,quiet=quiet)
         if remove_mid:
             os.remove(out_path)

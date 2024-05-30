@@ -72,4 +72,4 @@ def filetype(filename):
     return kind.split('/')[0]
 
 if __name__ == '__main__':
-    print(Jzchash('/ssdshare/.2024040125_2023040165_2023040163_project/src/tests/data/hierarchical_data_simple/dir/note_for_lec07.md'))
+    print(Jzchash('/ssdshare/.db_project/src/tests/data/hierarchical_data_simple/dir/note_for_lec07.md'))

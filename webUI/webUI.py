@@ -10,20 +10,20 @@ import uvicorn
 
 import gradio as gr
 
-def FIND(query, max_p):
-    os.system(f'sh /ssdshare/.2024040125_2023040165_2023040163_project/src/run_all.sh "{query}"> /ssdshare/.2024040125_2023040165_2023040163_project/src/putput.txt')
-    with open('/ssdshare/.2024040125_2023040165_2023040163_project/src/putput.txt', 'r') as f:
+def FIND(query, max_p,filter):
+    os.system(f'sh /ssdshare/.db_project/src/run_all.sh "{query}" "{filter}"> /ssdshare/.db_project/src/putput.txt')
+    with open('/ssdshare/.db_project/src/putput.txt', 'r') as f:
         data = f.read()
     return data
 
 demo = gr.Interface(
     fn=FIND,
-    inputs=["text", "slider"],
+    inputs=["text", "slider",'filter'],
     #output:markdown
-    outputs="text",
+    outputs="markdown",
     title="File Search",
     description="Search for files based on a query."
 )
 demo.launch(share=True)
 
-## sh /ssdshare/.2024040125_2023040165_2023040163_project/src/run_all.sh prompt
+## sh /ssdshare/.db_project/src/run_all.sh prompt
