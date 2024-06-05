@@ -1,0 +1,4 @@
+query,max_p,filters,output,flag,username,timestamp
+what is a sub-gaussian distribution,0,,"Sub-Gaussian distributions are probability distributions with a certain boundedness property, characterized by exponentially decaying tails and bounded moments. They satisfy concentration inequalities and are closed under operations like linear transformations, products, and convolutions. Examples include Gaussian, Bernoulli, Poisson, and uniform distributions. Sub-Gaussian distributions are important in statistics, machine learning, and signal processing for modeling high-dimensional data, robust estimation, and signals with bounded energy.
+
+*Sources:*",,,2024-06-05 19:35:08.103711

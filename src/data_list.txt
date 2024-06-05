@@ -1,0 +1,16 @@
+# Here is a example file list format. Lines starting with `#` will be ignored. Each line just contains a path to your file or a folder.
+#
+# To try it, uncomment one of these lines.
+#
+# ../demo/1/XQC/[Wasserman] All of Statistics.pdf
+# ../demo/2/final/programs/__init__.py
+# ../demo/2/final/programs/ebm.ipynb
+# ../demo/4/lec12-database_transactions.pptx
+# ../demo/4/red.mp4
+# ../demo/4/test.jpeg
+#
+# Notice that you can also specify a folder, like:
+# ../demo/1/XQC
+# Begin to write your files below.
+
+../demo/4/news.mp4

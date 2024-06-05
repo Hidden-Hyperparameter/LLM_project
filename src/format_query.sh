@@ -1,1 +1,1 @@
-cat ./format_query_prompt.txt /ssdshare/.it/query.txt | /share/ollama/ollama run llama3:70b > /ssdshare/.it/query_formatted.txt
+cat ./format_query/format_query_prompt.txt /ssdshare/.it/query.txt | /share/ollama/ollama run llama3:70b > /ssdshare/.it/query_formatted.txt

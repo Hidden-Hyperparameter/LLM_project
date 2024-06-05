@@ -1,9 +1,10 @@
 apt update
 source activate base
 echo "Installing Packages"
-apt install tesseract-ocr
-apt install ocrmypdf
-apt install libreoffice
+apt install -y tesseract-ocr
+apt install -y ocrmypdf
+apt install -y libreoffice
+apt install -y ffmpeg
 echo "Package Installation complete"
 
 echo "Installing Data"
@@ -13,9 +14,12 @@ echo "Data Installation complete"
 
 echo "Installing Python Packages"
 source activate base
-pip install PyPDF2
-pip install PyMuPDF
-pip install argparse
+pip install PyPDF2,PyMuPDF,argparse,av,gradio,librosa
 echo "Installing Python Packages Complete"
 
-echo "Finished!"
+echo "Final check"
+python utils/dependency.py
+echo "Final check finished"
+
+echo "All Finished!"
+

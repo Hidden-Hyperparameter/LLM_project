@@ -12,7 +12,7 @@ else:
     else:
         if filter.startswith('"'):
             filter = filter.strip('"')
-        filter = os.path.abspath(filter)
+        # filter = os.path.abspath(filter)
 if not os.path.exists('/ssdshare/.it/query.txt'):
     raise RuntimeError('[FILE_SEARCH/GEN_PROMPT.py]: cannot find query.txt')
 with open('/ssdshare/.it/query.txt', 'r') as file:
@@ -27,7 +27,7 @@ file_dict = json.load(open(LOG_DIR))
 lines = []
 for file,tags in file_dict.items():
     if filter is not None and file.find(filter) == -1:
-        sys.stderr.write('[INFO]: skipping',file,'since it does not contain ',filter)
+        sys.stderr.write('[INFO]: skipping '+file+' since it does not contain '+filter+'\n')
         continue
     tag_joined = ', '.join(tags)
     lines.append(f'File:{file},   tags:{tag_joined}\n')
@@ -46,7 +46,7 @@ You are a smart file finder. Each file may have several tags. YOU MUST NOT MAKE 
 <|eot_id|>
 <|start_header_id|>user<|end_header_id|>
 
-Find all files that might be related to "{query}".<|eot_id|>
+Find all files that might be related to "{query}".
 
 """)
 

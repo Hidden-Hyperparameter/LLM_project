@@ -6,4 +6,4 @@ src/tests/data/*
 src/tests/data/hierarchical_data/*
 **/__pycache__/
 ./1.py
-XQC/*
+demo/

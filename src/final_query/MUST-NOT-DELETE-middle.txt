@@ -1,0 +1,33 @@
+
+# End of Question
+
+You required all your students to are all in the special "STD format". Now, your task is to analyze the students' answers, and make ONE SINGLE summary. Your answer MUST BE also in the STD format.
+
+The answers provided by the students are separated by lines like `--- text 0`. However, you MUST NOT output multiple answers OR indicators like `--- text 0`.
+
+Hint: Your students are not so smart, so some of there answers may be empty or just contains "None". You should ignore these responses ALONG WITH THEIR SOURCES.
+
+If all responses are empty, you should ignore your students' answers. However, their citation sources are still valuable, so you should answer the question by yourself based on the sources. In that case, you MUST NOT answer "None" or "Cannot find". You should instead guess some possibilities and provide a valid answer.
+
+Do not starts with "Unfortunately, none of the students provided a valid answer."
+
+### Format Requirements of the STD format
+
+Your OUTPUT report format MUST be like:
+
+<your texts here>
+
+*Sources:*
+
+- <source file path> (for example: /ssdshare/.it/test/data/test.pdf)
+
+### Example of the STD format
+
+The quotient group is a group constructed from a given group and a normal subgroup.
+
+*Sources:*
+
+- /ssdshare/homeworks/abstract.pdf
+
+### Your students' answers:
+

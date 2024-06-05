@@ -1,0 +1,18 @@
+-  webUI (display markdown format)
+-  ~修改 final query 的 prompts~
+-  做 memory
+-  .epub file support
+-  video file support
+-  Vershynin sub-gaussian definition question
+-  https://llama.meta.com/docs/model-cards-and-prompt-formats/meta-llama-3/ Format prompts
+-  Fine tune the tagging process using online data (e.g., articles with tags)
+-  支持其他种类的问题 (e.g., summarize chapter 5 of book ...; list all books related with ...)
+-  Books: \[XQC\]
+-  Dummit Foote
+-  BHK
+-  LPV Discrete mathematics
+-  \[tests/data\]
+-  stars_sand.pdf
+-  ailab_rdm.md (for presentation: 如何连接跳板机)
+-  Vershynin
+-  统一原文件格式

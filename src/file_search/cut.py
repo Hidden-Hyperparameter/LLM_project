@@ -1,4 +1,4 @@
-N = 10
+N = 5
 # read from test.txt, and cut it in to little files of N lines,
 # and write them to test1.txt , test2.txt, test3.txt, ...
 # and return the number of files created

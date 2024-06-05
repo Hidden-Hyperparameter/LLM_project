@@ -1,3 +1,4 @@
+import torch
 def _check_package(package:str,url:str,additional:str=''):
     import subprocess
     try:
@@ -27,3 +28,9 @@ def CheckDependencies():
     if not 'chi_sim.traineddata' in l:
         raise RuntimeError(f'Tesseract Chinese Simplified language not downloaded. Go to https://github.com/tesseract-ocr/tessdata to download chi_sim.traineddata and place it in the directory {directory}. Alternatively, check for the `package` folder and place in that directory.')
     print('Check dependencies: chinese trained data installed')
+
+    if not torch.cuda.is_available():
+        raise RuntimeError('The code have to be run GPU, but you seems to not have one.')
+
+if __name__ == '__main__':
+    CheckDependencies()
