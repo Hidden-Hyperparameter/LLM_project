@@ -1,4 +1,4 @@
-python ./scripts/sim_search.py
+python ./scripts/sim_search.py $1
 num=$?
 tot=$num
 echo '---------------------------'

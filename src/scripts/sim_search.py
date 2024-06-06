@@ -25,4 +25,4 @@ for file in files:
         sys.stderr.write(f'[SIM_SEARCH.PY][INFO]: searching in {file}\n')
 
 
-exit(query_files_with_citation(files, query, '/ssdshare/.it/final_query/related'))
+exit(query_files_with_citation(files, query, '/ssdshare/.it/final_query/related',sys.argv[1]))

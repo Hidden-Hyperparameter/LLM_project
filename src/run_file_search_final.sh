@@ -14,7 +14,7 @@ cat /ssdshare/.it/file_search/prompt.txt /ssdshare/.it/all_files_cutted$num.txt 
 done
 
 # python sublits.py > ans.txt
-python ./file_search/sublist.py 2> ./debug.log
+python ./file_search/sublist.py #2> ./debug.log
 # cut
 num=$?
 tot=$num

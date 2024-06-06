@@ -14,7 +14,12 @@ echo "Data Installation complete"
 
 echo "Installing Python Packages"
 source activate base
-pip install PyPDF2,PyMuPDF,argparse,av,gradio,librosa
+pip install PyPDF2
+pip install PyMuPDF
+pip install argparse
+pip install av
+pip install gradio
+pip install librosa
 echo "Installing Python Packages Complete"
 
 echo "Final check"

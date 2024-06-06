@@ -11,7 +11,7 @@ os.environ['ALL_PROXY']=''
 def FIND(query, max_p,filters):
     """filters: the filename must contain the given {filters}."""
     print('UI recieve')
-    os.system(f'sh /ssdshare/.db_project/src/run_all.sh "{query}" "{filters}"')
+    os.system(f'sh /ssdshare/.db_project/src/run_all.sh "{query}" "{filters}" {max_p}')
     with open('/ssdshare/.it/putput.txt', 'r') as f:
         data = f.readlines()
     if 'student' in data[0]:

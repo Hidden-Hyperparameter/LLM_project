@@ -8,9 +8,11 @@
 # ../demo/4/lec12-database_transactions.pptx
 # ../demo/4/red.mp4
 # ../demo/4/test.jpeg
+# ../demo/4/news.mp4
 #
 # Notice that you can also specify a folder, like:
 # ../demo/1/XQC
+# ../demo/my_own_files
 # Begin to write your files below.
 
-../demo/4/news.mp4
+../demo/4

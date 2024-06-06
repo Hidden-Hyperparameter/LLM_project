@@ -8,7 +8,7 @@ from transformers import pipeline
 
 import av
 import numpy as np
-from transformers import AutoProcessor, AutoModelForCausalLM
+from transformers import AutoProcessor, AutoModelForCausalLM, LlavaForConditionalGeneration
 import librosa
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 import torch
@@ -20,6 +20,15 @@ VIDEO_MODEL = '/ssdshare/LLMs/git-base/'
 
 
 TMP_DIR = '/ssdshare/.it/ocr'
+
+DEVICE = 'cuda:3' if torch.cuda.is_available() else 'cpu'
+
+class MyDataParallel(torch.nn.DataParallel):
+    def __getattr__(self, name):
+        try:
+            return super().__getattr__(name)
+        except AttributeError:
+            return getattr(self.module, name)
 
 
 def extract_text_from_pdf(file_path):
@@ -42,25 +51,41 @@ def _ocr_pdf(file_path:str,remove_mid=True):
         os.remove(out_path)
     return tfile
 
+def load_image_model():
+    model_id = "/ssdshare/LLMs/llava-1.5-7b-hf/"
+    processor = AutoProcessor.from_pretrained(model_id)
+    model = LlavaForConditionalGeneration.from_pretrained(
+        model_id, 
+        torch_dtype=torch.float16, 
+        low_cpu_mem_usage=True, 
+    )
+    model = MyDataParallel(model,device_ids=[3,2,1,0])
+    model.to('cuda:3')
+    return processor,model
+
+def match_image_model_outouts(text:str):
+    results = []
+    lines = text.split('\n')
+    for line in lines:
+        if line.find('ASSISTANT:') != -1:
+            results.append(line.removeprefix('ASSISTANT: '))
+    return results
+
 def Describe_PNG(file_path:str,suffix:str,remove_mid=True):
-    video_processor = AutoProcessor.from_pretrained(VIDEO_MODEL)
-    video_model = AutoModelForCausalLM.from_pretrained(VIDEO_MODEL)
-    video_model.to('cuda')
-
-    image = Image.open(file_path).convert("RGB")
-
-    pixel_values = video_processor(images=image, return_tensors="pt").pixel_values.to('cuda')
-
-    question = "Summarize the image:"
-
-    input_ids = video_processor(text=question, add_special_tokens=False).input_ids
-    input_ids = [video_processor.tokenizer.cls_token_id] + input_ids
-    input_ids = torch.tensor(input_ids).unsqueeze(0).to('cuda')
-
-    generated_ids = video_model.generate(pixel_values=pixel_values, input_ids=input_ids, max_length=50)
+    prompt = "USER: <image>\nWhat is in this image\nASSISTANT:"
+    image_file = file_path
+    processor,model = load_image_model()
+    raw_image = Image.open(image_file)
+    x,y = (raw_image.size)
+    raw_image = raw_image.resize((min(x,1350),min(y,1350)))
+    inputs = processor(prompt, raw_image, return_tensors='pt').to(DEVICE, torch.float16)
+    output = model.generate(**inputs, max_new_tokens=200, do_sample=False)
+    texts = processor.decode(output[0][2:], skip_special_tokens=True)
+    del model,inputs
     torch.cuda.empty_cache()
-    return video_processor.batch_decode(generated_ids, skip_special_tokens=True)
-
+    return_values = ' '.join(match_image_model_outouts(texts))
+    # print(return_values)
+    return return_values
 
 def read_video_pyav(container, indices):
     frames = []
@@ -71,39 +96,43 @@ def read_video_pyav(container, indices):
         if i > end_index:
             break
         if i >= start_index and i in indices:
-            frames.append(frame)
+            ratio = (frame.width * frame.height / 5e4)**0.5
+            if ratio < 1:
+                ratio = 1
+            new_width = int(frame.width/ratio)
+            new_height = int(frame.height/ratio)
+            img = frame.to_image()
+            img = img.resize((new_width, new_height))
+            new_frame = av.VideoFrame.from_image(img)
+            new_frame.pts = frame.pts
+            frames.append(new_frame)
     return np.stack([x.to_ndarray(format="rgb24") for x in frames])
 
 def sample_frame_indices( stop, num,start=0):
-    indices = np.random.permutation(list(range(start,stop)))[:num]
-    indices = sorted(indices)
+    indices = np.linspace(1,stop,num)
+    indices = [int(x) for x in indices]
     return indices
 
 def Describe_Video(file_path:str,remove_mid=True):
-    video_processor = AutoProcessor.from_pretrained(VIDEO_MODEL)
-    video_model = AutoModelForCausalLM.from_pretrained(VIDEO_MODEL)
-    video_model.to('cuda')
+    processor,model = load_image_model()
     container = av.open(file_path)
     num_frames = container.streams.video[0].frames
+    prompt = "USER: <image>\nWhat is in this image\nASSISTANT:"
+    NUM_FRAMES_PICK = 25
     indices = sample_frame_indices(
-        num=min(num_frames//5,50), stop=num_frames
+        num=min(num_frames//5,NUM_FRAMES_PICK), stop=num_frames
     )
     frames = read_video_pyav(container, indices)
-    pixel_values = video_processor(images=list(frames), return_tensors="pt").pixel_values.to('cuda')
-    try:
-        generated_ids = video_model.generate(pixel_values=pixel_values, max_length=50)
-    except torch.cuda.OutOfMemoryError:
-        del pixel_values,frames
-        indices = sample_frame_indices(
-            num=20, stop=num_frames
-        )
-        frames = read_video_pyav(container, indices)
-        pixel_values = video_processor(images=list(frames), return_tensors="pt").pixel_values.to('cuda')
-        generated_ids = video_model.generate(pixel_values=pixel_values, max_length=50)
-
-    raw_results = video_processor.batch_decode(generated_ids, skip_special_tokens=True)
-    torch.cuda.empty_cache()
-    return 'This is a video. The contents in images are:'+'\n'.join(list(set(raw_results)))
+    texts = ''
+    for i in range(NUM_FRAMES_PICK-1):
+        inputs = processor([prompt], list(frames[i:i+1]), return_tensors='pt').to('cuda:3', torch.float16)
+        output = model.generate(**inputs, max_new_tokens=100, do_sample=False)
+        texts += ((processor.decode(output[0][2:], skip_special_tokens=True))+'\n')
+        del inputs,output
+        torch.cuda.empty_cache()
+    return_values =  'This is a video. The contents in images are:'+'\n'.join(match_image_model_outouts(texts))
+    # print(return_values)
+    return return_values
 
 def OCR_VIDEO(file_path:str,suffix:str,remove_mid=True):
     print('[OCR.PY] running ocr for video files...')
@@ -132,14 +161,14 @@ def OCR_AUDIO(file_path:str,suffix:str,remove_mid=True):
 
         audio_processor = Wav2Vec2Processor.from_pretrained(MODEL_ID)
         audio_model = Wav2Vec2ForCTC.from_pretrained(MODEL_ID)
-        audio_model.to('cuda')
+        audio_model.to(DEVICE)
 
         y,fps = librosa.load(file_path)
         ten_seconds = 10 * fps
         cutted = [y[i:i+ten_seconds] for i in range(0,len(y),ten_seconds)]
         cutted[-1] = np.concatenate((cutted[-1],np.zeros(ten_seconds-len(cutted[-1]))),axis=0)
         audio = np.stack(cutted,axis=0)
-        inputs = audio_processor(audio, sampling_rate=16_000, return_tensors="pt", padding=True).to('cuda')
+        inputs = audio_processor(audio, sampling_rate=16_000, return_tensors="pt", padding=True).to(DEVICE)
 
         with torch.no_grad():
             logits = audio_model(inputs.input_values, attention_mask=inputs.attention_mask).logits

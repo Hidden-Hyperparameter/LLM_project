@@ -23,7 +23,7 @@
 
 ## Demo
 
-In the demo, the database is built from the `demo` [folder](./demo). There are **??** files in total.
+In the demo, the database is built from the `demo` [folder](./demo). There are **68** files in total, including 45 pdf files, 8 image & video files, and 15 other files files.
 
 Here are some example Q&A pairs:
 

@@ -28,10 +28,15 @@ def WriteDBLog(file_name):
     with open(DB_LOG_DIR, 'w') as f:
         for log in logs:
             f.write(log + '\n')
-def _query_chroma(ch:Chroma,q:str):
+def _query_chroma(ch:Chroma,q:str,max_p:int=4):
     if q == '':
         return
-    docs = ch.similarity_search(q)
+    if max_p>6:
+        max_p = 6
+    if max_p<1:
+        max_p = 1
+    # print('[Similarity Search], max_p is',max_p)
+    docs = ch.similarity_search(q,max_p)
     l = [doc.page_content for doc in docs]
     return list(set(l))
 
@@ -82,7 +87,7 @@ def make_db_from_text(filename:str,texts:str,quiet=True):
     docsearch_chroma.persist()
     return docsearch_chroma
 
-def query_db_from_file(file:str,query:str,quiet=True):
+def query_db_from_file(file:str,query:str,quiet=True,max_p=5):
     """query `query` from chroma db, given context `file`
     notice that `file` is a path."""
     file = os.path.abspath(file)
@@ -98,7 +103,7 @@ def query_db_from_file(file:str,query:str,quiet=True):
         return _query_chroma(Chroma(
             persist_directory=chroma_dir,
             collection_name=_gen_chroma_name(file),
-            embedding_function=minilm_embedding),query)
+            embedding_function=minilm_embedding),query,max_p=5)
     else:
         # create new chroma db
         sys.stderr.write(f'[DB.PY]:running ocr for {file}')
@@ -110,9 +115,9 @@ def query_db_from_file(file:str,query:str,quiet=True):
         sys.stderr.write('[DB.PY new]:test')
         # save records
         WriteDBLog(file)
-        return _query_chroma(docsearch_chroma,query)
+        return _query_chroma(docsearch_chroma,query,max_p=5)
 
-def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
+def query_files_with_citation(files,query:str,save_dir:str,quiet=True,max_p:int=5):
     """Arguments
     files: the possible file list
     query: the query 
@@ -127,7 +132,7 @@ def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
         if not os.path.exists(file):
             print(f'\033[31m [DB.PY:WARNING]\033[0m : CANNOT find file {file}, skipping it instead.')
             continue
-        list_of_texts = query_db_from_file(file,query,quiet=quiet)
+        list_of_texts = query_db_from_file(file,query,quiet=quiet,max_p=max_p)
         if len(list_of_texts) == 0:
             raise BaseException()
             # list_of_texts = ['None.']
@@ -141,4 +146,6 @@ def query_files_with_citation(files,query:str,save_dir:str,quiet=True):
             buff_cnt += 1
             buff=[]
             valid_file_cnt = 0
+    open(save_dir+str(buff_cnt)+'.txt','w').writelines(buff)
+    buff_cnt += 1
     return buff_cnt
