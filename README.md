@@ -41,3 +41,6 @@ Here are some example Q&A pairs:
 
 Can find images or videos based on there context meanings:
 
+![](./docs/assets/with-image.png)
+
+I am wgt

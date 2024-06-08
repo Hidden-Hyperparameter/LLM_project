@@ -19,7 +19,7 @@ Your OUTPUT report format MUST be like:
 
 *Sources:*
 
-- <source file path> (for example: /ssdshare/.it/test/data/test.pdf)
+- /path/to/file.txt (replace it with your REAL source file path!)
 
 ### Example of the STD format
 

@@ -43,7 +43,7 @@ Find all files that might be related to "{query}".
 Possible files list:\n\n""")
 
             file_list = list(set(file1))
-            sys.stderr.write(f'[SUBLIST.PY]: file_lists {file_list}')
+            # sys.stderr.write(f'[SUBLIST.PY]: file_lists {file_list}')
 
             test_path = '/ssdshare/.it/all_files.txt'
             test_lists = []
@@ -55,7 +55,7 @@ Possible files list:\n\n""")
                     ############## ZHH has modified this line #################
                     test_lists.append(line.strip())
                     ###########################################################
-            sys.stderr.write(f'\n\n[SUBLIST.PY]: test_lists {test_lists}')
+            # sys.stderr.write(f'\n\n[SUBLIST.PY]: test_lists {test_lists}')
 
 
             for line in test_lists:
@@ -63,7 +63,7 @@ Possible files list:\n\n""")
                 file_name = file_name.split(':')[1].strip()
                 if file_name in file_list:
                     f.write(line+'\n')
-                    sys.stderr.write('\n'+line+'\n')
+                    # sys.stderr.write('\n'+line+'\n')
 
 
             f.write("""<|eot_id|>
