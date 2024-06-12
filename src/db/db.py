@@ -28,15 +28,13 @@ def WriteDBLog(file_name):
     with open(DB_LOG_DIR, 'w') as f:
         for log in logs:
             f.write(log + '\n')
-def _query_chroma(ch:Chroma,q:str,max_p:int=4):
+def _query_chroma(ch:Chroma,q:str,max_p:int=50):
     if q == '':
         return
-    if max_p>6:
-        max_p = 6
-    if max_p<1:
-        max_p = 1
+    from math import tanh
+    max_p = 3+2*tanh((max_p-50)/20)
     # print('[Similarity Search], max_p is',max_p)
-    docs = ch.similarity_search(q,max_p)
+    docs = ch.similarity_search(q,int(max_p))
     l = [doc.page_content for doc in docs]
     return list(set(l))
 
@@ -87,7 +85,7 @@ def make_db_from_text(filename:str,texts:str,quiet=True):
     docsearch_chroma.persist()
     return docsearch_chroma
 
-def query_db_from_file(file:str,query:str,quiet=True,max_p=5):
+def query_db_from_file(file:str,query:str,quiet=True,max_p=50):
     """query `query` from chroma db, given context `file`
     notice that `file` is a path."""
     file = os.path.abspath(file)
@@ -103,7 +101,7 @@ def query_db_from_file(file:str,query:str,quiet=True,max_p=5):
         return _query_chroma(Chroma(
             persist_directory=chroma_dir,
             collection_name=_gen_chroma_name(file),
-            embedding_function=minilm_embedding),query,max_p=5)
+            embedding_function=minilm_embedding),query,max_p=max_p)
     else:
         # create new chroma db
         sys.stderr.write(f'[DB.PY]:running ocr for {file}')

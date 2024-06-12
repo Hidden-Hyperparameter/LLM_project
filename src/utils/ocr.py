@@ -1,5 +1,5 @@
 import PyPDF2
-from langchain.document_loaders import PyPDFLoader
+from langchain.document_loaders import PDFMinerLoader
 import subprocess
 import os
 import fitz
@@ -41,6 +41,7 @@ def extract_text_from_pdf(file_path):
     return text
 
 def _ocr_pdf(file_path:str,remove_mid=True):
+    """directly run ocrmypdf on the file_path, return the text string"""
     out_path = file_path.replace('.pdf','')+'_ocr.pdf'
     try:
         subprocess.check_output(['ocrmypdf','-l','eng+chi_sim', '--force-ocr', file_path, out_path])
@@ -287,7 +288,7 @@ def ocr_image_based_pdf(input_pdf:str,max_step:int=20,quiet=True,remove=True):
 
 def ocr_text_based_pdf(input_pdf:str,quiet=True,remove=True):
     # print('[INFO] oce_text_based_pdf')
-    data = PyPDFLoader(input_pdf).load()
+    data = PDFMinerLoader(input_pdf).load()
     if sum([len(d.page_content) for d in data])/len(data) < 300:
         return False
     return '\n'.join([d.page_content for d in data])
@@ -300,6 +301,7 @@ def OCR_PDF(input_pdf:str,quiet=True,remove=True):
     return ocr_image_based_pdf(input_pdf,quiet=quiet,remove=remove)
 
 def _replace_space(s:str):
+    # print('----------input---------\n\n',s)
     l = [c for c in s]
     lc = l.copy()
     import string
@@ -310,7 +312,9 @@ def _replace_space(s:str):
             l = l[:j]+l[j+1:]
         else:
             j += 1
-    return ''.join(l)
+    output = ''.join(l)
+    # print('----------output---------\n\n',output)
+    return output
 
 def _raw_OCR(file_path:str,remove_mid=True,quiet=True):
     # first convert path to absolute path

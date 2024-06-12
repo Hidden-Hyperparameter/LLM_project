@@ -5,6 +5,8 @@ apt install -y tesseract-ocr
 apt install -y ocrmypdf
 apt install -y libreoffice
 apt install -y ffmpeg
+source activate
+conda install poppler
 echo "Package Installation complete"
 
 echo "Installing Data"
@@ -20,6 +22,7 @@ pip install argparse
 pip install av
 pip install gradio
 pip install librosa
+pip install pillow_heif
 echo "Installing Python Packages Complete"
 
 echo "Final check"

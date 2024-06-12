@@ -29,9 +29,12 @@ Here are some example Q&A pairs:
 
 ### Standard Q & A
 
+![](./docs/assets/good-example.png)
+
 ![](./docs/assets/qa1.png)
 
 ![](./docs/assets/qa2.png)
+
 
 ### With the `filter` function
 
@@ -39,8 +42,8 @@ Here are some example Q&A pairs:
 
 ![](./docs/assets/with-filter.png)
 
-Can find images or videos based on there context meanings:
+###  Find Images or Videos Based On Their Context Meanings:
 
 ![](./docs/assets/with-image.png)
 
-I am wgt
+![](./docs/assets/with-video.JPG)
